@@ -6,7 +6,7 @@ cocktail-lab helps people learn, explore and cost cocktails: bilingual recipes, 
 
 ## Status
 
-Monorepo scaffold only: `packages/core`, `apps/api` and `apps/web` each hold a placeholder `src/index.ts` and an example test, with no functionality yet. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
+`packages/core` holds the Zod schemas for ingredients and recipes and `validateCatalogue`; `data/` holds the ingredient catalogue and one sample recipe (Daiquiri). `apps/api` and `apps/web` are still placeholders. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
 
 ## Stack
 
@@ -14,6 +14,7 @@ Monorepo scaffold only: `packages/core`, `apps/api` and `apps/web` each hold a p
 - TypeScript 6.0 strict (`tsconfig.base.json`); TypeScript 7 waits for typescript-eslint support.
 - ESLint 10 with typescript-eslint `strictTypeChecked` (`eslint.config.js`).
 - Vitest 5, one project per workspace (`vitest.config.ts`).
+- Zod 4.6.7 in `packages/core` (schemas); recipe data is JSON in `data/`, checked by `scripts/validate-data.ts`.
 - Planned, added by the step of the plan that needs them: Zod, Fastify, React + Vite, react-i18next; three.js in v2.
 
 ## Commands
@@ -25,6 +26,7 @@ Run from the repository root:
 - `npm run typecheck`: `tsc --noEmit` in every workspace.
 - `npm test`: Vitest, all workspaces.
 - `npm run build`: `tsc` into each workspace's `dist/`.
+- `npm run validate-data`: checks `data/` (needs `npm run build` first); add `-- --release` to also require 5 recipes per family.
 - `npm audit --audit-level=high`: dependency audit, as in CI.
 
 Do not invent commands: add each one here once it exists in `package.json` or CI and you have run it.
@@ -34,7 +36,7 @@ Do not invent commands: add each one here once it exists in `package.json` or CI
 - Base branch: dev
 - Branch names: feat/<topic>, fix/<topic>, docs/<topic>, chore/<topic>
 - Commits: Conventional Commits (`feat: …`, `fix: …`, `docs: …`, `chore: …`)
-- Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm audit --audit-level=high`; CI (`.github/workflows/ci.yml`) also runs gitleaks
+- Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run validate-data`, `npm audit --audit-level=high`; CI (`.github/workflows/ci.yml`) also runs gitleaks
 - Changelog: none
 - Update method: rebase
 - task-flow mode: safe
