@@ -1,0 +1,21 @@
+[
+  {
+    "id": "white-rum",
+    "name": { "es": "Ron blanco", "en": "White rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "lime-juice",
+    "name": { "es": "Jugo de lima fresco", "en": "Fresh lime juice" },
+    "category": "juice",
+    "measure": "ml"
+  },
+  {
+    "id": "superfine-sugar",
+    "name": { "es": "Azúcar extrafina", "en": "Superfine sugar" },
+    "category": "other",
+    "measure": "g"
+  }
+]
