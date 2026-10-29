@@ -6,22 +6,35 @@ cocktail-lab helps people learn, explore and cost cocktails: bilingual recipes, 
 
 ## Status
 
-The repository has no code yet: only `README.md`, `LICENSE` (MIT) and `.gitignore`. When you add the first manifest (`package.json`), scripts or CI, update the Stack, Commands and Checks entries below in the same change.
+Monorepo scaffold only: `packages/core`, `apps/api` and `apps/web` each hold a placeholder `src/index.ts` and an example test, with no functionality yet. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
 
 ## Stack
 
-- Planned (from the README, not yet in the code): Node, TypeScript, React and three.js.
+- Node 26 LTS (`.nvmrc`), npm workspaces: `packages/*`, `apps/*`.
+- TypeScript 6.0 strict (`tsconfig.base.json`); TypeScript 7 waits for typescript-eslint support.
+- ESLint 10 with typescript-eslint `strictTypeChecked` (`eslint.config.js`).
+- Vitest 5, one project per workspace (`vitest.config.ts`).
+- Planned, added by the step of the plan that needs them: Zod, Fastify, React + Vite, react-i18next; three.js in v2.
 
 ## Commands
 
-None yet. Do not invent commands: add each one here once it exists in `package.json` or CI and you have run it.
+Run from the repository root:
+
+- `npm ci`: install dependencies.
+- `npm run lint`: ESLint on the whole repository.
+- `npm run typecheck`: `tsc --noEmit` in every workspace.
+- `npm test`: Vitest, all workspaces.
+- `npm run build`: `tsc` into each workspace's `dist/`.
+- `npm audit --audit-level=high`: dependency audit, as in CI.
+
+Do not invent commands: add each one here once it exists in `package.json` or CI and you have run it.
 
 ## Git workflow
 
 - Base branch: dev
 - Branch names: feat/<topic>, fix/<topic>, docs/<topic>, chore/<topic>
 - Commits: Conventional Commits (`feat: …`, `fix: …`, `docs: …`, `chore: …`)
-- Checks: none yet
+- Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm audit --audit-level=high`; CI (`.github/workflows/ci.yml`) also runs gitleaks
 - Changelog: none
 - Update method: rebase
 - task-flow mode: safe
