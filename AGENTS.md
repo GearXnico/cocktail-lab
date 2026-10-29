@@ -25,6 +25,9 @@ None yet. Do not invent commands: add each one here once it exists in `package.j
 - Changelog: none
 - Update method: rebase
 - task-flow mode: safe
+- Tracker: GitHub Issues; `Closes #n` in the pull request description
+- Docs: docs/, ADRs in docs/adr/
+- Release: SemVer; pull request from dev to main, then tag vX.Y.Z on main; no release/ branches
 
 `main` receives releases from `dev`; do not open working branches or pull requests against `main`.
 
