@@ -63,10 +63,10 @@ describe('drinkCost', () => {
   ] as const;
 
   it.each([
-    // 60×20 + 20×2 + 10×1 = 1250
-    [0, 1250],
-    [0.1, 1375],
-    [0.2, 1500],
+    // 60×20 + 20×2 + 8×1 = 1248 (a barspoon of sugar is 4 g)
+    [0, 1248],
+    [0.1, 1373], // 1372.8
+    [0.2, 1498], // 1497.6
   ])('daiquiri with %f waste costs %f CLP', (wastePct, expected) => {
     expect(drinkCost(daiquiri, ingredients, prices, wastePct, 'CLP')).toEqual({
       complete: true,
