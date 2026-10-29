@@ -13,9 +13,10 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "typecheck": "npm run typecheck --workspaces",
+    "typecheck": "npm run typecheck --workspaces && tsc --noEmit -p scripts",
     "test": "vitest run",
-    "build": "npm run build --workspaces"
+    "build": "npm run build --workspaces",
+    "validate-data": "node scripts/validate-data.ts"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

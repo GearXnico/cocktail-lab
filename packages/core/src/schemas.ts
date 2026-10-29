@@ -54,6 +54,8 @@ export const IngredientSchema = z
   })
   .strict();
 
+export const IngredientsFileSchema = z.array(IngredientSchema);
+
 export const RecipeIngredientSchema = z
   .object({
     ingredientId: SlugSchema,
