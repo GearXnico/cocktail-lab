@@ -18,7 +18,7 @@ and the specs must be reliable.
 ## Decision
 
 We will keep recipes and the ingredient catalogue as JSON in the repository, checked in CI by `validate-data` against the Zod schemas in `core`
-(schema, unique ids, every `ingredientId` exists, both languages non-empty, at least 5 recipes per family), and the API validates them again at startup and refuses to start on error.
+(schema, unique ids, every `ingredientId` exists, both languages non-empty), plus at least 5 recipes per family as an error only in release mode (CI runs it on pull requests into `main`; elsewhere it is a warning, so recipes can be added a few at a time), and the API validates them again at startup and refuses to start on error.
 Specs follow the IBA when the cocktail has an IBA spec, with its URL in `sources`, and the maintainer reviews every recipe pull request,
 because recipes are curated content that must be correct in both languages and change only through review.
 
