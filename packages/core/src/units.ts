@@ -9,11 +9,8 @@ export const ML_PER_UNIT = {
 
 export const ML_PER_OZ = 30;
 
-/**
- * A barspoon of an ingredient measured in grams (dry sugar) counts as 5 g:
- * its 5 ml taken at 1 g/ml. The same nominal approximation as a `topUp` amount.
- */
-const GRAMS_PER_BARSPOON = 5;
+/** A barspoon of an ingredient measured in grams (dry sugar) counts as 4 g. */
+const GRAMS_PER_BARSPOON = 4;
 
 function isVolumeUnit(unit: RecipeIngredient['unit']): unit is keyof typeof ML_PER_UNIT {
   return unit in ML_PER_UNIT;
@@ -45,8 +42,30 @@ export function amountInMeasure(
 
 /**
  * Converts ml to ounces for display only, rounded to the nearest quarter
- * ounce (ties go up). Costing always stays in ml.
+ * ounce (ties go up) and never below ¼ oz for a positive amount, so "0 oz" is
+ * never shown. Costing always stays in ml.
  */
 export function mlToOz(ml: number): number {
-  return Math.round((ml / ML_PER_OZ) * 4) / 4;
+  const oz = Math.round((ml / ML_PER_OZ) * 4) / 4;
+  return ml > 0 ? Math.max(oz, 0.25) : oz;
+}
+
+export interface DisplayAmount {
+  amount: number;
+  unit: RecipeIngredient['unit'] | 'oz';
+}
+
+/**
+ * The amount of a recipe line as the user wants to see it. Only `ml` lines
+ * that are not a top-up become ounces; dash, barspoon, unit, g and top-up
+ * lines keep their own unit.
+ */
+export function displayAmount(
+  line: Pick<RecipeIngredient, 'amount' | 'unit' | 'topUp'>,
+  displayUnit: 'ml' | 'oz',
+): DisplayAmount {
+  if (displayUnit === 'oz' && line.unit === 'ml' && line.topUp !== true) {
+    return { amount: mlToOz(line.amount), unit: 'oz' };
+  }
+  return { amount: line.amount, unit: line.unit };
 }
