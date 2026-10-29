@@ -26,6 +26,9 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      - run: npm run validate-data
+      - if: github.base_ref == 'main'
+        run: npm run validate-data -- --release
       - run: npm audit --audit-level=high
 
   gitleaks:
