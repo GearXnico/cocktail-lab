@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "daiquiri",
+  "family": "sours",
+  "base": "rum",
+  "name": { "es": "Daiquiri", "en": "Daiquiri" },
+  "ingredients": [
+    { "ingredientId": "white-rum", "amount": 60, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 20, "unit": "ml" },
+    { "ingredientId": "superfine-sugar", "amount": 2, "unit": "barspoon" }
+  ],
+  "technique": "shake",
+  "glass": "cocktail",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "En una coctelera, añade todos los ingredientes, con ron blanco (tradicionalmente cubano). Revuelve bien para disolver el azúcar.",
+      "Añade hielo y agita. Cuela en una copa de cóctel enfriada."
+    ],
+    "en": [
+      "In a cocktail shaker add all ingredients, with white rum (traditionally Cuban). Stir well to dissolve the sugar.",
+      "Add ice and shake. Strain into chilled cocktail glass."
+    ]
+  },
+  "difficulty": 1,
+  "history": {
+    "es": "Lleva el nombre de Daiquirí, una localidad minera del este de Cuba. Según la historia más conocida, lo creó el ingeniero Jennings Cox hacia 1900.",
+    "en": "Named after Daiquirí, a mining town in eastern Cuba. According to the best-known story, the engineer Jennings Cox created it around 1900."
+  },
+  "sources": ["https://iba-world.com/iba-cocktail/daiquiri/"]
+}
