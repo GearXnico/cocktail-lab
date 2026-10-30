@@ -66,12 +66,17 @@ const RecipeSummarySchema = z.object({
 export interface AppOptions {
   catalogue: Catalogue;
   /** Fastify's logger option; off by default so tests stay quiet. */
-  logger?: boolean | FastifyBaseLogger;
+  logger?: boolean;
+  /** A ready-made logger (Fastify 5 does not take an instance in `logger`); wins over `logger`. */
+  loggerInstance?: FastifyBaseLogger;
 }
 
 /** Builds the API over an already validated catalogue. Nothing is listening yet. */
-export function buildApp({ catalogue, logger = false }: AppOptions): FastifyInstance {
-  const app = Fastify({ logger, bodyLimit: 64 * 1024 });
+export function buildApp({ catalogue, logger = false, loggerInstance }: AppOptions): FastifyInstance {
+  const app = Fastify({
+    ...(loggerInstance ? { loggerInstance } : { logger }),
+    bodyLimit: 64 * 1024,
+  });
   app.setValidatorCompiler(validatorCompiler);
   app.setSerializerCompiler(serializerCompiler);
 
