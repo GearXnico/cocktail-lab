@@ -1,4 +1,4 @@
-import type { FastifyInstance } from 'fastify';
+import type { FastifyInstance, FastifyReply } from 'fastify';
 import type { ZodTypeProvider } from 'fastify-type-provider-zod';
 import { z } from 'zod';
 import {
@@ -23,7 +23,7 @@ const currencies = new Set(Intl.supportedValuesOf('currency'));
 const PriceSchema = z.strictObject({
   ingredientId: SlugSchema,
   price: z.number().min(0).max(1e9),
-  size: z.number().positive().max(1e9),
+  size: z.number().min(0.001).max(1e9),
   measure: z.enum(['ml', 'unit', 'g']),
 });
 
@@ -33,7 +33,7 @@ const CostingBodySchema = z
     ingredients: z.array(RecipeIngredientSchema).min(1).max(MAX_LINES).optional(),
     prices: z.array(PriceSchema).max(MAX_PRICES),
     wastePct: z.number().min(0).max(1),
-    targetCostPct: z.number().gt(0).max(1),
+    targetCostPct: z.number().min(0.01).max(1),
     taxPct: z.number().min(0).max(1).optional(),
     taxIncluded: z.boolean().optional(),
     roundingStep: z.number().gt(0).max(1e6).optional(),
@@ -164,6 +164,14 @@ export function registerCosting(api: FastifyInstance, catalogue: Catalogue): voi
         body.wastePct,
         body.currency,
       );
+      // Huge amounts can overflow to Infinity: that is bad input, not a server error.
+      const overflow = (): FastifyReply =>
+        reply.code(400).send({
+          error: 'Bad Request',
+          issues: [{ path: '', code: 'non_finite_result', message: 'Amounts or prices too large to cost' }],
+        });
+      if (costed.some((line) => line.cost !== null && !Number.isFinite(line.cost))) return overflow();
+      if (cost.complete && !Number.isFinite(cost.cost)) return overflow();
       if (!cost.complete) {
         return {
           lines: costed,
@@ -184,6 +192,7 @@ export function registerCosting(api: FastifyInstance, catalogue: Catalogue): voi
         ...(body.taxIncluded !== undefined && { taxIncluded: body.taxIncluded }),
         ...(body.roundingStep !== undefined && { roundingStep: body.roundingStep }),
       });
+      if (!Object.values(pricing).every(Number.isFinite)) return overflow();
       return { lines: costed, ...pricing, missing: [] };
     },
   );
