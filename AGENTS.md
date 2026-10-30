@@ -6,7 +6,7 @@ cocktail-lab helps people learn, explore and cost cocktails: bilingual recipes, 
 
 ## Status
 
-`packages/core` holds the Zod schemas for ingredients and recipes, `validateCatalogue`, unit conversion (including ml → oz for display) and costing; `data/` holds the ingredient catalogue and one sample recipe (Daiquiri). `apps/api` and `apps/web` are still placeholders. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
+`packages/core` holds the Zod schemas for ingredients and recipes, `validateCatalogue`, unit conversion (including ml → oz for display) and costing; `data/` holds the ingredient catalogue and one sample recipe (Daiquiri). `packages/core` also has the recipe search (`searchRecipes`). `apps/api` serves recipes and ingredients under `/api/v1` (costing comes in the next step); `apps/web` is still a placeholder. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
 
 ## Stack
 
@@ -15,7 +15,8 @@ cocktail-lab helps people learn, explore and cost cocktails: bilingual recipes, 
 - ESLint 10 with typescript-eslint `strictTypeChecked` (`eslint.config.js`).
 - Vitest 5, one project per workspace (`vitest.config.ts`).
 - Zod 4.6.7 in `packages/core` (schemas); recipe data is JSON in `data/`, checked by `scripts/validate-data.ts`.
-- Planned, added by the step of the plan that needs them: Zod, Fastify, React + Vite, react-i18next; three.js in v2.
+- Fastify 5 with `fastify-type-provider-zod` in `apps/api`; the API loads and validates `data/` at startup and does not start if it is invalid.
+- Planned, added by the step of the plan that needs them: React + Vite, react-i18next; three.js in v2.
 
 ## Commands
 
@@ -27,6 +28,7 @@ Run from the repository root:
 - `npm test`: Vitest, all workspaces.
 - `npm run build`: `tsc` into each workspace's `dist/`.
 - `npm run validate-data`: checks `data/` (needs `npm run build` first); add `-- --release` to also require 5 recipes per family.
+- `npm run build && npm start -w @cocktail-lab/api`: starts the API on `127.0.0.1:3000`; `PORT`, `HOST` and `DATA_DIR` override the defaults.
 - `npm audit --audit-level=high`: dependency audit, as in CI.
 
 Do not invent commands: add each one here once it exists in `package.json` or CI and you have run it.
