@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "old-fashioned",
+  "family": "spirit-forward",
+  "base": "whisky",
+  "name": { "es": "Old Fashioned", "en": "Old Fashioned" },
+  "ingredients": [
+    { "ingredientId": "bourbon", "amount": 45, "unit": "ml" },
+    { "ingredientId": "sugar-cube", "amount": 1, "unit": "unit" },
+    { "ingredientId": "angostura-bitters", "amount": 3, "unit": "dash" },
+    { "ingredientId": "water", "amount": 3, "unit": "dash" }
+  ],
+  "technique": "build",
+  "glass": "rocks",
+  "ice": "cubes",
+  "garnish": { "es": "Rodaja o piel de naranja y una cereza de cóctel", "en": "Orange slice or zest, and a cocktail cherry" },
+  "steps": {
+    "es": [
+      "Pon el terrón de azúcar en un vaso old fashioned, empápalo con el amargo y añade unas gotas de agua. Machaca hasta que se disuelva.",
+      "Llena el vaso con cubos de hielo y añade el whiskey (bourbon o centeno).",
+      "Remueve suavemente."
+    ],
+    "en": [
+      "Place the sugar cube in an old fashioned glass and saturate it with the bitters, then add a few dashes of plain water. Muddle until dissolved.",
+      "Fill the glass with ice cubes and add the whiskey (bourbon or rye).",
+      "Stir gently."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Sigue la fórmula más antigua del cóctel: licor, azúcar, agua y amargos. El nombre \"old fashioned\" se usa desde finales del siglo XIX, y varias ciudades de Estados Unidos se disputan su origen.", "en": "It follows the oldest cocktail formula: spirit, sugar, water and bitters. The name \"old fashioned\" has been used since the late 19th century, and several American cities dispute its origin." },
+  "sources": ["https://iba-world.com/iba-cocktail/old-fashioned/"]
+}

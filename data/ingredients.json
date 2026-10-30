@@ -75,5 +75,60 @@
     "name": { "es": "Jarabe de azúcar", "en": "Sugar syrup" },
     "category": "syrup",
     "measure": "ml"
+  },
+  {
+    "id": "rye-whiskey",
+    "name": { "es": "Whisky de centeno", "en": "Rye whiskey" },
+    "category": "spirit",
+    "base": "whisky",
+    "measure": "ml"
+  },
+  {
+    "id": "sweet-vermouth",
+    "name": { "es": "Vermut rojo dulce", "en": "Sweet red vermouth" },
+    "category": "wine",
+    "measure": "ml"
+  },
+  {
+    "id": "dry-vermouth",
+    "name": { "es": "Vermut seco", "en": "Dry vermouth" },
+    "category": "wine",
+    "measure": "ml"
+  },
+  {
+    "id": "campari",
+    "name": { "es": "Campari", "en": "Campari" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "absinthe",
+    "name": { "es": "Absenta", "en": "Absinthe" },
+    "category": "spirit",
+    "measure": "ml"
+  },
+  {
+    "id": "angostura-bitters",
+    "name": { "es": "Amargo de Angostura", "en": "Angostura bitters" },
+    "category": "bitters",
+    "measure": "ml"
+  },
+  {
+    "id": "peychauds-bitters",
+    "name": { "es": "Amargo Peychaud's", "en": "Peychaud's bitters" },
+    "category": "bitters",
+    "measure": "ml"
+  },
+  {
+    "id": "sugar-cube",
+    "name": { "es": "Terrón de azúcar", "en": "Sugar cube" },
+    "category": "other",
+    "measure": "unit"
+  },
+  {
+    "id": "water",
+    "name": { "es": "Agua", "en": "Water" },
+    "category": "other",
+    "measure": "ml"
   }
 ]
