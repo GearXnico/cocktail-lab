@@ -189,6 +189,26 @@ describe('errors', () => {
     expect((await get('/recipes')).status).toBe(404);
   });
 
+  it('answers the standard text of the status for framework 4xx errors', async () => {
+    create();
+    const tooLarge = await app.inject({
+      method: 'POST',
+      url: '/api/v1/costing',
+      payload: { pad: 'x'.repeat(70 * 1024) },
+    });
+    expect(tooLarge.statusCode).toBe(413);
+    expect(tooLarge.json()).toEqual({ error: 'Payload Too Large' });
+
+    const unsupported = await app.inject({
+      method: 'POST',
+      url: '/api/v1/costing',
+      headers: { 'content-type': 'application/xml' },
+      payload: '<a/>',
+    });
+    expect(unsupported.statusCode).toBe(415);
+    expect(unsupported.json()).toEqual({ error: 'Unsupported Media Type' });
+  });
+
   it('returns 500 without details when a handler fails', async () => {
     // A recipe that breaks the response schema makes serialisation throw.
     create({ ingredients, recipes: [{ ...recipes[0], family: 'broken' } as unknown as Recipe] });
