@@ -38,7 +38,7 @@ Do not invent commands: add each one here once it exists in `package.json` or CI
 - Base branch: dev
 - Branch names: feat/<topic>, fix/<topic>, docs/<topic>, chore/<topic>
 - Commits: Conventional Commits (`feat: …`, `fix: …`, `docs: …`, `chore: …`)
-- Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run validate-data`, `npm audit --audit-level=high`; CI (`.github/workflows/ci.yml`) also runs gitleaks
+- Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run validate-data`, `npm audit --audit-level=high`; CI (`.github/workflows/ci.yml`) also runs gitleaks, and CodeQL runs from `.github/workflows/codeql.yml`
 - Changelog: none
 - Update method: rebase
 - task-flow mode: safe
