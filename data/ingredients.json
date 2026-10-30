@@ -199,5 +199,114 @@
     "name": { "es": "Jugo de naranja", "en": "Orange juice" },
     "category": "juice",
     "measure": "ml"
+  },
+  {
+    "id": "amber-jamaican-rum",
+    "name": { "es": "Ron ámbar jamaiquino", "en": "Amber Jamaican rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "martinique-molasses-rhum",
+    "name": { "es": "Ron de melaza de Martinica", "en": "Martinique molasses rhum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "orange-curacao",
+    "name": { "es": "Curaçao de naranja", "en": "Orange curaçao" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "orgeat",
+    "name": { "es": "Orgeat", "en": "Orgeat syrup" },
+    "category": "syrup",
+    "measure": "ml"
+  },
+  {
+    "id": "coconut-cream",
+    "name": { "es": "Crema de coco", "en": "Coconut cream" },
+    "category": "other",
+    "measure": "ml"
+  },
+  {
+    "id": "pineapple-juice",
+    "name": { "es": "Jugo de piña", "en": "Pineapple juice" },
+    "category": "juice",
+    "measure": "ml"
+  },
+  {
+    "id": "jamaican-dark-rum",
+    "name": { "es": "Ron oscuro jamaiquino", "en": "Jamaican dark rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "gold-puerto-rican-rum",
+    "name": { "es": "Ron dorado de Puerto Rico", "en": "Gold Puerto Rican rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "demerara-rum",
+    "name": { "es": "Ron demerara", "en": "Demerara rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "falernum",
+    "name": { "es": "Falernum", "en": "Falernum" },
+    "category": "syrup",
+    "measure": "ml"
+  },
+  {
+    "id": "donns-mix",
+    "name": { "es": "Donn's Mix", "en": "Donn's Mix" },
+    "category": "other",
+    "measure": "ml"
+  },
+  {
+    "id": "grenadine",
+    "name": { "es": "Granadina", "en": "Grenadine syrup" },
+    "category": "syrup",
+    "measure": "ml"
+  },
+  {
+    "id": "pernod",
+    "name": { "es": "Pernod", "en": "Pernod" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "blackstrap-rum",
+    "name": { "es": "Ron blackstrap", "en": "Blackstrap rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "demerara-syrup",
+    "name": { "es": "Jarabe de azúcar demerara", "en": "Demerara sugar syrup" },
+    "category": "syrup",
+    "measure": "ml"
+  },
+  {
+    "id": "jamaican-rum",
+    "name": { "es": "Ron jamaiquino", "en": "Jamaican rum" },
+    "category": "spirit",
+    "base": "rum",
+    "measure": "ml"
+  },
+  {
+    "id": "sugar-cane-juice",
+    "name": { "es": "Jugo de caña", "en": "Sugar cane juice" },
+    "category": "juice",
+    "measure": "ml"
   }
 ]

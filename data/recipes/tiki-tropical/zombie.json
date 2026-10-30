@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "zombie",
+  "family": "tiki-tropical",
+  "base": "rum",
+  "name": { "es": "Zombie", "en": "Zombie" },
+  "ingredients": [
+    { "ingredientId": "jamaican-dark-rum", "amount": 45, "unit": "ml" },
+    { "ingredientId": "gold-puerto-rican-rum", "amount": 45, "unit": "ml" },
+    { "ingredientId": "demerara-rum", "amount": 30, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 20, "unit": "ml" },
+    { "ingredientId": "falernum", "amount": 15, "unit": "ml" },
+    { "ingredientId": "donns-mix", "amount": 15, "unit": "ml" },
+    { "ingredientId": "grenadine", "amount": 5, "unit": "ml" },
+    { "ingredientId": "angostura-bitters", "amount": 1, "unit": "dash" },
+    { "ingredientId": "pernod", "amount": 0.3, "unit": "ml" }
+  ],
+  "technique": "blend",
+  "glass": "collins",
+  "ice": "crushed",
+  "garnish": { "es": "Hojas de menta", "en": "Mint leaves" },
+  "steps": {
+    "es": [
+      "Pon todos los ingredientes en una licuadora con 170 g de hielo picado. El Donn's Mix son 2 partes de jugo fresco de pomelo amarillo y 1 parte de jarabe de canela.",
+      "Licúa en pulsos unos segundos y sirve en un vaso alto."
+    ],
+    "en": [
+      "Add all ingredients to an electric blender with 170 g of cracked ice. Donn's Mix is 2 parts fresh yellow grapefruit juice to 1 part cinnamon syrup.",
+      "Pulse briefly for a few seconds and serve in a tall tumbler."
+    ]
+  },
+  "difficulty": 3,
+  "history": { "es": "Combina tres ron distintos con el Donn's Mix, una mezcla de pomelo y canela. La ficha IBA da 6 gotas de Pernod; aquí se cuentan como 0,3 ml.", "en": "It combines three different rums with Donn's Mix, a blend of grapefruit and cinnamon. The IBA sheet gives 6 drops of Pernod; here they count as 0.3 ml." },
+  "sources": ["https://iba-world.com/iba-cocktail/zombie/"]
+}

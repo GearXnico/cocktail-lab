@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "jungle-bird",
+  "family": "tiki-tropical",
+  "base": "rum",
+  "name": { "es": "Jungle Bird", "en": "Jungle Bird" },
+  "ingredients": [
+    { "ingredientId": "blackstrap-rum", "amount": 45, "unit": "ml" },
+    { "ingredientId": "campari", "amount": 22.5, "unit": "ml" },
+    { "ingredientId": "pineapple-juice", "amount": 45, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 15, "unit": "ml" },
+    { "ingredientId": "demerara-syrup", "amount": 15, "unit": "ml" }
+  ],
+  "technique": "shake",
+  "glass": "rocks",
+  "ice": "cubes",
+  "garnish": { "es": "Gajo de piña", "en": "Pineapple wedge" },
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes en una coctelera con hielo y agita.",
+      "Cuela en un vaso old fashioned lleno de hielo."
+    ],
+    "en": [
+      "Add all ingredients to a shaker with ice and shake.",
+      "Strain into a rocks glass filled with ice."
+    ]
+  },
+  "difficulty": 2,
+  "history": { "es": "Un tiki de ron, piña y Campari, que le da un contrapunto amargo a lo tropical. La IBA lo incluye en su categoría New Era.", "en": "A tiki drink of rum, pineapple and Campari, whose bitterness balances the tropical fruit. The IBA lists it in its New Era category." },
+  "sources": ["https://iba-world.com/iba-cocktail/jungle-bird/"]
+}
