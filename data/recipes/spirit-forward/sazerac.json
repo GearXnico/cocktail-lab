@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "sazerac",
+  "family": "spirit-forward",
+  "base": "brandy",
+  "name": { "es": "Sazerac", "en": "Sazerac" },
+  "ingredients": [
+    { "ingredientId": "cognac", "amount": 50, "unit": "ml" },
+    { "ingredientId": "absinthe", "amount": 10, "unit": "ml" },
+    { "ingredientId": "sugar-cube", "amount": 1, "unit": "unit" },
+    { "ingredientId": "peychauds-bitters", "amount": 2, "unit": "dash" }
+  ],
+  "technique": "stir",
+  "glass": "rocks",
+  "ice": "none",
+  "garnish": { "es": "Piel de limón", "en": "Lemon zest" },
+  "steps": {
+    "es": [
+      "Enjuaga un vaso old fashioned enfriado con la absenta, añade hielo picado y resérvalo.",
+      "Remueve el resto de los ingredientes con hielo en un vaso mezclador.",
+      "Descarta el hielo y el exceso de absenta del vaso preparado y cuela la mezcla en él."
+    ],
+    "en": [
+      "Rinse a chilled old fashioned glass with the absinthe, add crushed ice and set it aside.",
+      "Stir the remaining ingredients over ice in a mixing glass.",
+      "Discard the ice and any excess absinthe from the prepared glass and strain the mixed drink into it."
+    ]
+  },
+  "difficulty": 2,
+  "history": { "es": "Es el cóctel emblemático de Nueva Orleans. La ficha IBA indica que la receta original cambió tras la Guerra Civil estadounidense, cuando el whiskey de centeno sustituyó al cognac, difícil de conseguir.", "en": "The emblematic cocktail of New Orleans. The IBA sheet notes that the original recipe changed after the American Civil War, when rye whiskey replaced cognac, which had become hard to obtain." },
+  "sources": ["https://iba-world.com/iba-cocktail/sazerac/"]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "dry-martini",
+  "family": "spirit-forward",
+  "base": "gin",
+  "name": { "es": "Dry Martini", "en": "Dry Martini" },
+  "ingredients": [
+    { "ingredientId": "gin", "amount": 60, "unit": "ml" },
+    { "ingredientId": "dry-vermouth", "amount": 10, "unit": "ml" }
+  ],
+  "technique": "stir",
+  "glass": "cocktail",
+  "ice": "none",
+  "garnish": { "es": "Aceite de piel de limón sobre la bebida o, si lo piden, una aceituna verde", "en": "Oil from a lemon peel squeezed onto the drink or, if requested, a green olive" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes en un vaso mezclador con cubos de hielo. Remueve bien.",
+      "Cuela en una copa de martini enfriada.",
+      "Exprime sobre la bebida el aceite de una piel de limón."
+    ],
+    "en": [
+      "Pour all ingredients into a mixing glass with ice cubes. Stir well.",
+      "Strain into a chilled martini cocktail glass.",
+      "Squeeze the oil from a lemon peel onto the drink."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Su origen es discutido; la mezcla de ginebra y vermut se populariza a finales del siglo XIX y con los años la proporción de vermut fue bajando.", "en": "Its origin is disputed; gin and vermouth mixes became popular in the late 19th century, and the share of vermouth has dropped over the years." },
+  "sources": ["https://iba-world.com/iba-cocktail/dry-martini/"]
+}

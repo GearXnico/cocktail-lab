@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "negroni",
+  "family": "spirit-forward",
+  "base": "gin",
+  "name": { "es": "Negroni", "en": "Negroni" },
+  "ingredients": [
+    { "ingredientId": "gin", "amount": 30, "unit": "ml" },
+    { "ingredientId": "campari", "amount": 30, "unit": "ml" },
+    { "ingredientId": "sweet-vermouth", "amount": 30, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "rocks",
+  "ice": "cubes",
+  "garnish": { "es": "Media rodaja de naranja", "en": "Half orange slice" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes directamente en un vaso old fashioned enfriado y lleno de hielo.",
+      "Remueve suavemente."
+    ],
+    "en": [
+      "Pour all ingredients directly into a chilled old fashioned glass filled with ice.",
+      "Stir gently."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Según la historia más conocida, nació en Florencia hacia 1919, cuando el conde Camillo Negroni pidió un Americano con ginebra en lugar de soda.", "en": "According to the best-known story, it was born in Florence around 1919, when Count Camillo Negroni asked for an Americano with gin instead of soda." },
+  "sources": ["https://iba-world.com/iba-cocktail/negroni/"]
+}

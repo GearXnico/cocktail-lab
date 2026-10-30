@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "manhattan",
+  "family": "spirit-forward",
+  "base": "whisky",
+  "name": { "es": "Manhattan", "en": "Manhattan" },
+  "ingredients": [
+    { "ingredientId": "rye-whiskey", "amount": 50, "unit": "ml" },
+    { "ingredientId": "sweet-vermouth", "amount": 20, "unit": "ml" },
+    { "ingredientId": "angostura-bitters", "amount": 1, "unit": "dash" }
+  ],
+  "technique": "stir",
+  "glass": "cocktail",
+  "ice": "none",
+  "garnish": { "es": "Cereza de cóctel", "en": "Cocktail cherry" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes en un vaso mezclador con cubos de hielo.",
+      "Remueve bien. Cuela en una copa de cóctel enfriada."
+    ],
+    "en": [
+      "Pour all ingredients into a mixing glass with ice cubes.",
+      "Stir well. Strain into a chilled cocktail glass."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Es un clásico de Nueva York de finales del siglo XIX. Se le atribuyen varios orígenes, ninguno confirmado.", "en": "A New York classic from the late 19th century. Several origin stories exist, none confirmed." },
+  "sources": ["https://iba-world.com/iba-cocktail/manhattan/"]
+}
