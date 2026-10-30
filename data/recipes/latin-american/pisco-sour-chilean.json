@@ -14,7 +14,7 @@
       "unit": "ml"
     },
     {
-      "ingredientId": "gum-syrup",
+      "ingredientId": "sugar-syrup",
       "amount": 30,
       "unit": "ml"
     },
@@ -40,6 +40,6 @@
   "difficulty": 1,
   "history": {
     "es": "La versión chilena del Pisco Sour lleva pisco, jarabe de goma y limón, sin clara de huevo. Chile y Perú se disputan el origen de esta bebida.",
-    "en": "The Chilean version of the Pisco Sour is pisco, gum syrup and lemon, with no egg white. Chile and Peru both claim the drink as their own."
+    "en": "The Chilean version of the Pisco Sour is pisco, simple syrup and lemon, with no egg white. Chile and Peru both claim the drink as their own."
   }
 }

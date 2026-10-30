@@ -106,8 +106,8 @@
   {
     "id": "sugar-syrup",
     "name": {
-      "es": "Jarabe de azúcar",
-      "en": "Sugar syrup"
+      "es": "Jarabe de goma",
+      "en": "Simple syrup"
     },
     "category": "syrup",
     "measure": "ml"
@@ -512,15 +512,6 @@
     },
     "category": "fresh",
     "measure": "unit"
-  },
-  {
-    "id": "gum-syrup",
-    "name": {
-      "es": "Jarabe de goma",
-      "en": "Gum syrup"
-    },
-    "category": "syrup",
-    "measure": "ml"
   },
   {
     "id": "pineapple-ice-cream",
