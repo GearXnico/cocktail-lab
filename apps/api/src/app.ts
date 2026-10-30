@@ -1,3 +1,4 @@
+import { STATUS_CODES } from 'node:http';
 import Fastify from 'fastify';
 import type { FastifyBaseLogger, FastifyError, FastifyInstance } from 'fastify';
 import {
@@ -91,9 +92,10 @@ export function buildApp({ catalogue, logger = false, loggerInstance }: AppOptio
         })),
       });
     }
-    // Framework errors such as a malformed or oversized body keep a generic message.
+    // Framework errors such as a malformed or oversized body answer the standard
+    // text of their status, never the error's own message.
     if (typeof error.statusCode === 'number' && error.statusCode >= 400 && error.statusCode < 500) {
-      return reply.code(error.statusCode).send({ error: 'Bad Request' });
+      return reply.code(error.statusCode).send({ error: STATUS_CODES[error.statusCode] ?? 'Bad Request' });
     }
     request.log.error({ err: error }, 'unhandled error');
     return reply.code(500).send({ error: 'Internal Server Error' });

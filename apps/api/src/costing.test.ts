@@ -210,7 +210,7 @@ describe('POST /api/v1/costing', () => {
       payload: { ...withRecipe, pad: 'x'.repeat(20 * 1024) },
     });
     expect(response.statusCode).toBe(413);
-    expect(response.json()).toEqual({ error: 'Bad Request' });
+    expect(response.json()).toEqual({ error: 'Payload Too Large' });
   });
 
   it('never logs values from the body', async () => {
