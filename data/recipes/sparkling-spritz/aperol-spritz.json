@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "aperol-spritz",
+  "family": "sparkling-spritz",
+  "base": "aperitif",
+  "name": { "es": "Aperol Spritz", "en": "Aperol Spritz" },
+  "ingredients": [
+    { "ingredientId": "prosecco", "amount": 90, "unit": "ml" },
+    { "ingredientId": "aperol", "amount": 60, "unit": "ml" },
+    { "ingredientId": "soda-water", "amount": 10, "unit": "ml", "topUp": true }
+  ],
+  "technique": "build",
+  "glass": "wine",
+  "ice": "cubes",
+  "garnish": { "es": "Rodaja de naranja", "en": "Orange slice" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes directamente en una copa de vino llena de hielo.",
+      "Remueve suavemente."
+    ],
+    "en": [
+      "Build all ingredients into a wine glass filled with ice.",
+      "Stir gently."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "La ficha IBA lo publica como Spritz, con prosecco, Aperol y un chorrito de soda, y anota que existen versiones con Campari, Cynar o Select en lugar de Aperol.", "en": "The IBA publishes it as Spritz, with Prosecco, Aperol and a splash of soda, and notes that other versions use Campari, Cynar or Select instead of Aperol." },
+  "sources": ["https://iba-world.com/iba-cocktail/spritz/"]
+}

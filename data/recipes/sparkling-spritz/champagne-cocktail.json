@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "champagne-cocktail",
+  "family": "sparkling-spritz",
+  "base": "sparkling-wine",
+  "name": { "es": "Champagne Cocktail", "en": "Champagne Cocktail" },
+  "ingredients": [
+    { "ingredientId": "sugar-cube", "amount": 1, "unit": "unit" },
+    { "ingredientId": "angostura-bitters", "amount": 2, "unit": "dash" },
+    { "ingredientId": "cognac", "amount": 10, "unit": "ml" },
+    { "ingredientId": "champagne", "amount": 90, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "flute",
+  "ice": "none",
+  "garnish": { "es": "Piel de naranja y cereza marrasquino", "en": "Orange zest and maraschino cherry" },
+  "steps": {
+    "es": [
+      "Pon el terrón de azúcar con los 2 chorritos de amargo en una copa de champán grande y añade el cognac.",
+      "Vierte despacio el champán bien frío."
+    ],
+    "en": [
+      "Place the sugar cube with 2 dashes of bitters in a large Champagne glass, then add the Cognac.",
+      "Slowly pour in the chilled Champagne."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Une el azúcar con amargo de los cócteles antiguos y el champán. La ficha IBA indica además unas gotas opcionales de Grand Marnier, que aquí no se incluyen por no tener cantidad definida.", "en": "It joins the sugar-and-bitters base of the old cocktails with Champagne. The IBA sheet also lists a few optional drops of Grand Marnier, left out here because they have no defined amount." },
+  "sources": ["https://iba-world.com/iba-cocktail/champagne-cocktail/"]
+}

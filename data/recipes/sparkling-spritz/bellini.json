@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "bellini",
+  "family": "sparkling-spritz",
+  "base": "sparkling-wine",
+  "name": { "es": "Bellini", "en": "Bellini" },
+  "ingredients": [
+    { "ingredientId": "prosecco", "amount": 100, "unit": "ml" },
+    { "ingredientId": "white-peach-puree", "amount": 50, "unit": "ml" }
+  ],
+  "technique": "stir",
+  "glass": "flute",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Pon el puré de durazno en un vaso mezclador con hielo y añade el prosecco.",
+      "Remueve suavemente y cuela en una copa flauta enfriada."
+    ],
+    "en": [
+      "Add the peach puree to a mixing glass with ice, then add the Prosecco.",
+      "Stir gently and strain into a chilled flute."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Se prepara con prosecco y puré de durazno blanco. La ficha IBA lista sus variantes: Puccini (jugo de mandarina), Rossini (puré de fresa) y Tintoretto (jugo de granada).", "en": "Made with Prosecco and white peach puree. The IBA sheet lists its variations: Puccini (mandarin juice), Rossini (strawberry puree) and Tintoretto (pomegranate juice)." },
+  "sources": ["https://iba-world.com/iba-cocktail/bellini/"]
+}
