@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "planters-punch",
+  "family": "tiki-tropical",
+  "base": "rum",
+  "name": { "es": "Planter's Punch", "en": "Planter's Punch" },
+  "ingredients": [
+    { "ingredientId": "jamaican-rum", "amount": 45, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 15, "unit": "ml" },
+    { "ingredientId": "sugar-cane-juice", "amount": 30, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "rocks",
+  "ice": "cubes",
+  "garnish": { "es": "Piel de naranja", "en": "Orange zest" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes directamente en el vaso.",
+      "Si quieres, diluye con agua, hielo o jugo fresco al gusto."
+    ],
+    "en": [
+      "Add all ingredients directly to the glass.",
+      "Dilute with water, ice or fresh juice to taste if desired."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Un ponche de ron, lima y jugo de caña que la IBA incluye entre Los Imprescindibles. La ficha deja la dilución a gusto de quien lo prepara.", "en": "A punch of rum, lime and sugar cane juice that the IBA lists among The Unforgettables. The sheet leaves dilution to the taste of whoever makes it." },
+  "sources": ["https://iba-world.com/iba-cocktail/planters-punch/"]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "pina-colada",
+  "family": "tiki-tropical",
+  "base": "rum",
+  "name": { "es": "Piña Colada", "en": "Piña Colada" },
+  "ingredients": [
+    { "ingredientId": "white-rum", "amount": 50, "unit": "ml" },
+    { "ingredientId": "coconut-cream", "amount": 30, "unit": "ml" },
+    { "ingredientId": "pineapple-juice", "amount": 50, "unit": "ml" }
+  ],
+  "technique": "blend",
+  "glass": "collins",
+  "ice": "crushed",
+  "garnish": { "es": "Rodaja de piña y cereza de cóctel", "en": "Pineapple slice and cocktail cherry" },
+  "steps": {
+    "es": [
+      "Licúa todos los ingredientes con hielo hasta que quede una mezcla suave.",
+      "Pasa a un vaso grande y sirve con pajitas."
+    ],
+    "en": [
+      "Combine all ingredients with ice in an electric blender and blend until smooth.",
+      "Transfer to a large glass and serve with straws."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Ron, crema de coco y piña licuados. La ficha IBA anota que antes se añadían unas gotas de jugo de lima y que cuatro rodajas de piña fresca pueden sustituir al jugo.", "en": "Rum, coconut cream and pineapple, blended. The IBA sheet notes that a few drops of lime juice were once added and that four slices of fresh pineapple can replace the juice." },
+  "sources": ["https://iba-world.com/iba-cocktail/pina-colada/"]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mai-tai",
+  "family": "tiki-tropical",
+  "base": "rum",
+  "name": { "es": "Mai Tai", "en": "Mai Tai" },
+  "ingredients": [
+    { "ingredientId": "amber-jamaican-rum", "amount": 30, "unit": "ml" },
+    { "ingredientId": "martinique-molasses-rhum", "amount": 30, "unit": "ml" },
+    { "ingredientId": "orange-curacao", "amount": 15, "unit": "ml" },
+    { "ingredientId": "orgeat", "amount": 15, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 30, "unit": "ml" },
+    { "ingredientId": "sugar-syrup", "amount": 7.5, "unit": "ml" }
+  ],
+  "technique": "shake",
+  "glass": "rocks",
+  "ice": "crushed",
+  "garnish": { "es": "Gajo de piña, hojas de menta y piel de lima", "en": "Pineapple spear, mint leaves and lime peel" },
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes en una coctelera con hielo y agita.",
+      "Cuela en un vaso old fashioned doble o en un highball."
+    ],
+    "en": [
+      "Add all ingredients to a shaker with ice and shake.",
+      "Strain into a double rocks glass or a highball glass."
+    ]
+  },
+  "difficulty": 2,
+  "history": { "es": "La ficha IBA lo atribuye a la receta de Trader Vic y aclara que el ron de melaza de Martinica que él usaba no era un rhum agricole.", "en": "The IBA sheet follows Trader Vic's recipe and notes that the Martinique molasses rum he used was not a rhum agricole." },
+  "sources": ["https://iba-world.com/iba-cocktail/mai-tai/"]
+}
