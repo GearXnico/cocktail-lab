@@ -19,6 +19,7 @@ import {
 } from '@cocktail-lab/core';
 import type { RecipeQuery } from '@cocktail-lab/core';
 import type { Catalogue } from './catalogue.js';
+import { registerCosting } from './costing.js';
 
 export const API_PREFIX = '/api/v1';
 
@@ -146,6 +147,8 @@ export function buildApp({ catalogue, logger = false }: AppOptions): FastifyInst
         { schema: { response: { 200: z.array(IngredientSchema) } } },
         () => catalogue.ingredients,
       );
+
+      registerCosting(api, catalogue);
     },
     { prefix: API_PREFIX },
   );
