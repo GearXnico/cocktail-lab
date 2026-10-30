@@ -2,7 +2,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "lib": ["ES2024"],
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "@cocktail-lab/core": ["../../packages/core/src/index.ts"]
+    }
   },
   "include": ["src"]
 }
