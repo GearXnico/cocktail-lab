@@ -130,5 +130,42 @@
     "name": { "es": "Agua", "en": "Water" },
     "category": "other",
     "measure": "ml"
+  },
+  {
+    "id": "vodka",
+    "name": { "es": "Vodka", "en": "Vodka" },
+    "category": "spirit",
+    "base": "vodka",
+    "measure": "ml"
+  },
+  {
+    "id": "soda-water",
+    "name": { "es": "Agua con gas", "en": "Soda water" },
+    "category": "soda",
+    "measure": "ml"
+  },
+  {
+    "id": "ginger-beer",
+    "name": { "es": "Cerveza de jengibre", "en": "Ginger beer" },
+    "category": "soda",
+    "measure": "ml"
+  },
+  {
+    "id": "cola",
+    "name": { "es": "Cola", "en": "Cola" },
+    "category": "soda",
+    "measure": "ml"
+  },
+  {
+    "id": "pink-grapefruit-soda",
+    "name": { "es": "Gaseosa de pomelo rosado", "en": "Pink grapefruit soda" },
+    "category": "soda",
+    "measure": "ml"
+  },
+  {
+    "id": "mint-sprig",
+    "name": { "es": "Rama de menta", "en": "Mint sprig" },
+    "category": "fresh",
+    "measure": "unit"
   }
 ]

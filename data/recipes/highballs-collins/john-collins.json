@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "john-collins",
+  "family": "highballs-collins",
+  "base": "gin",
+  "name": { "es": "John Collins", "en": "John Collins" },
+  "ingredients": [
+    { "ingredientId": "gin", "amount": 45, "unit": "ml" },
+    { "ingredientId": "lemon-juice", "amount": 30, "unit": "ml" },
+    { "ingredientId": "sugar-syrup", "amount": 15, "unit": "ml" },
+    { "ingredientId": "soda-water", "amount": 60, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "highball",
+  "ice": "cubes",
+  "garnish": { "es": "Rodaja de limón y cereza marrasquino", "en": "Lemon slice and maraschino cherry" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes directamente en un vaso highball lleno de hielo.",
+      "Remueve suavemente."
+    ],
+    "en": [
+      "Pour all ingredients directly into a highball glass filled with ice.",
+      "Stir gently."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Es la ficha que la IBA publica para la familia Collins. Con ginebra Old Tom se prepara el Tom Collins, una variante de la misma receta. Su origen se sitúa en el siglo XIX.", "en": "This is the sheet the IBA publishes for the Collins family. Made with Old Tom gin it becomes the Tom Collins, a variant of the same recipe. Its origin is placed in the 19th century." },
+  "sources": ["https://iba-world.com/iba-cocktail/john-collins/"]
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "paloma",
+  "family": "highballs-collins",
+  "base": "tequila",
+  "name": { "es": "Paloma", "en": "Paloma" },
+  "ingredients": [
+    { "ingredientId": "tequila-blanco", "amount": 50, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 5, "unit": "ml" },
+    { "ingredientId": "pink-grapefruit-soda", "amount": 100, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "highball",
+  "ice": "cubes",
+  "garnish": { "es": "Rodaja de lima", "en": "Lime slice" },
+  "steps": {
+    "es": [
+      "Vierte el tequila en un vaso highball y exprime el jugo de lima.",
+      "Añade hielo y una pizca de sal, y completa con gaseosa de pomelo rosado.",
+      "Remueve suavemente."
+    ],
+    "en": [
+      "Pour the tequila into a highball glass and squeeze in the lime juice.",
+      "Add ice and a pinch of salt, and fill up with pink grapefruit soda.",
+      "Stir gently."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Es uno de los tragos más populares de México. Su origen exacto no está claro y se le atribuyen varios creadores.", "en": "One of the most popular drinks in Mexico. Its exact origin is unclear and several creators are credited." },
+  "sources": ["https://iba-world.com/iba-cocktail/paloma/"]
+}
