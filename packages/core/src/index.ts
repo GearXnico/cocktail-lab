@@ -4,3 +4,4 @@ export * from './catalogue.js';
 export * from './schemas.js';
 export * from './costing.js';
 export * from './units.js';
+export * from './search.js';
