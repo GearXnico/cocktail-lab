@@ -165,6 +165,9 @@ describe('POST /api/v1/costing', () => {
     ['roundingStep 0', { ...withRecipe, roundingStep: 0 }],
     ['a negative price', { ...withRecipe, prices: [{ ...prices[0], price: -1 }] }],
     ['a size of 0', { ...withRecipe, prices: [{ ...prices[0], size: 0 }] }],
+    ['a size below 0.001', { ...withRecipe, prices: [{ ...prices[0], size: 0.0009 }] }],
+    ['a price above 1e9', { ...withRecipe, prices: [{ ...prices[0], price: 1e9 + 1 }] }],
+    ['targetCostPct below 0.01', { ...withRecipe, targetCostPct: 0.009 }],
     ['a duplicated price', { ...withRecipe, prices: [prices[0], prices[0]] }],
     ['an extra field', { ...withRecipe, extra: true }],
     ['a missing prices list', { ...base, recipeId: 'daiquiri' }],
@@ -175,6 +178,28 @@ describe('POST /api/v1/costing', () => {
     expect(status).toBe(400);
     expect(body.error).toBe('Bad Request');
     expect(body.issues.length).toBeGreaterThan(0);
+  });
+
+  it('accepts the limits themselves', async () => {
+    const { status } = await post({
+      ...withRecipe,
+      targetCostPct: 0.01,
+      prices: [
+        { ingredientId: 'white-rum', price: 1e9, size: 0.001, measure: 'ml' },
+        { ingredientId: 'lime-juice', price: 0, size: 1e9, measure: 'ml' },
+      ],
+    });
+    expect(status).toBe(200);
+  });
+
+  it('answers 400, not 500, when the result is not finite', async () => {
+    const { status, body } = await post({
+      ...base,
+      prices: [{ ingredientId: 'pisco', price: 1e9, size: 0.001, measure: 'ml' }],
+      ingredients: [{ ingredientId: 'pisco', amount: 1e300, unit: 'ml' }],
+    });
+    expect(status).toBe(400);
+    expect(body.issues[0]?.code).toBe('non_finite_result');
   });
 
   it('rejects a body above the size limit', async () => {
