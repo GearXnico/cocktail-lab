@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sidecar",
+  "family": "sours",
+  "base": "brandy",
+  "name": { "es": "Sidecar", "en": "Sidecar" },
+  "ingredients": [
+    { "ingredientId": "cognac", "amount": 50, "unit": "ml" },
+    { "ingredientId": "triple-sec", "amount": 20, "unit": "ml" },
+    { "ingredientId": "lemon-juice", "amount": 20, "unit": "ml" }
+  ],
+  "technique": "shake",
+  "glass": "cocktail",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes en una coctelera, agita bien con hielo.",
+      "Cuela en una copa de cóctel enfriada."
+    ],
+    "en": [
+      "Pour all ingredients into a cocktail shaker, shake well with ice.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Cóctel clásico de coñac surgido hacia el final de la Primera Guerra Mundial; se disputa si nació en París o en Londres.", "en": "A classic cognac cocktail from around the end of the First World War; it is disputed whether it began in Paris or London." },
+  "sources": ["https://iba-world.com/iba-cocktail/sidecar/"]
+}

@@ -8,7 +8,7 @@
   },
   {
     "id": "lime-juice",
-    "name": { "es": "Jugo de lima fresco", "en": "Fresh lime juice" },
+    "name": { "es": "Jugo de lima", "en": "Lime juice" },
     "category": "juice",
     "measure": "ml"
   },
@@ -17,5 +17,63 @@
     "name": { "es": "Azúcar extrafina", "en": "Superfine sugar" },
     "category": "other",
     "measure": "g"
+  },
+  {
+    "id": "bourbon",
+    "name": { "es": "Bourbon", "en": "Bourbon" },
+    "category": "spirit",
+    "base": "whisky",
+    "measure": "ml"
+  },
+  {
+    "id": "tequila-blanco",
+    "name": { "es": "Tequila 100% agave", "en": "Tequila 100% agave" },
+    "category": "spirit",
+    "base": "tequila",
+    "measure": "ml"
+  },
+  {
+    "id": "cognac",
+    "name": { "es": "Cognac", "en": "Cognac" },
+    "category": "spirit",
+    "base": "brandy",
+    "measure": "ml"
+  },
+  {
+    "id": "gin",
+    "name": { "es": "Ginebra", "en": "Gin" },
+    "category": "spirit",
+    "base": "gin",
+    "measure": "ml"
+  },
+  {
+    "id": "triple-sec",
+    "name": { "es": "Triple sec", "en": "Triple sec" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "green-chartreuse",
+    "name": { "es": "Chartreuse verde", "en": "Green Chartreuse" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "maraschino-liqueur",
+    "name": { "es": "Licor de marrasquino", "en": "Maraschino liqueur" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "lemon-juice",
+    "name": { "es": "Jugo de limón", "en": "Lemon juice" },
+    "category": "juice",
+    "measure": "ml"
+  },
+  {
+    "id": "sugar-syrup",
+    "name": { "es": "Jarabe de azúcar", "en": "Sugar syrup" },
+    "category": "syrup",
+    "measure": "ml"
   }
 ]

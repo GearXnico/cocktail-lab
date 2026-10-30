@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "whiskey-sour",
+  "family": "sours",
+  "base": "whisky",
+  "name": { "es": "Whiskey Sour", "en": "Whiskey Sour" },
+  "ingredients": [
+    { "ingredientId": "bourbon", "amount": 45, "unit": "ml" },
+    { "ingredientId": "lemon-juice", "amount": 25, "unit": "ml" },
+    { "ingredientId": "sugar-syrup", "amount": 20, "unit": "ml" }
+  ],
+  "technique": "shake",
+  "glass": "rocks",
+  "ice": "cubes",
+  "garnish": { "es": "Media rodaja de naranja y cereza marrasquino", "en": "Half orange slice and maraschino cherry" },
+  "steps": {
+    "es": [
+      "Vierte todos los ingredientes en una coctelera con hielo. Agita bien.",
+      "Cuela en un vaso old fashioned lleno de hielo (la ficha IBA usa copa cobbler sin hielo o este formato \"on the rocks\")."
+    ],
+    "en": [
+      "Pour all ingredients into a cocktail shaker filled with ice. Shake well.",
+      "Strain into an old fashioned glass filled with ice (the IBA spec uses a cobbler glass, or this \"on the rocks\" serve)."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Los sours de whisky se documentan en Estados Unidos desde el siglo XIX; la primera receta impresa conocida aparece en 1862 en un libro de Jerry Thomas.", "en": "Whiskey sours are documented in the United States from the 19th century; the earliest known printed recipe appears in an 1862 book by Jerry Thomas." },
+  "sources": ["https://iba-world.com/iba-cocktail/whiskey-sour/"]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "last-word",
+  "family": "sours",
+  "base": "gin",
+  "name": { "es": "Last Word", "en": "Last Word" },
+  "ingredients": [
+    { "ingredientId": "gin", "amount": 22.5, "unit": "ml" },
+    { "ingredientId": "green-chartreuse", "amount": 22.5, "unit": "ml" },
+    { "ingredientId": "maraschino-liqueur", "amount": 22.5, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 22.5, "unit": "ml" }
+  ],
+  "technique": "shake",
+  "glass": "cocktail",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes en una coctelera.",
+      "Agita con hielo y cuela en una copa de cóctel enfriada."
+    ],
+    "en": [
+      "Add all ingredients into a cocktail shaker.",
+      "Shake with ice and strain into a chilled cocktail glass."
+    ]
+  },
+  "difficulty": 2,
+  "history": { "es": "Nació en el Detroit Athletic Club en la década de 1910 y se rescató en Seattle en 2004, desde donde volvió a popularizarse.", "en": "Created at the Detroit Athletic Club in the 1910s and revived in Seattle in 2004, from where it became popular again." },
+  "sources": ["https://iba-world.com/iba-cocktail/last-word/"]
+}
