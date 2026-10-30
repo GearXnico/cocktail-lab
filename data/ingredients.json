@@ -167,5 +167,37 @@
     "name": { "es": "Rama de menta", "en": "Mint sprig" },
     "category": "fresh",
     "measure": "unit"
+  },
+  {
+    "id": "prosecco",
+    "name": { "es": "Prosecco", "en": "Prosecco" },
+    "category": "wine",
+    "base": "sparkling-wine",
+    "measure": "ml"
+  },
+  {
+    "id": "champagne",
+    "name": { "es": "Champán", "en": "Champagne" },
+    "category": "wine",
+    "base": "sparkling-wine",
+    "measure": "ml"
+  },
+  {
+    "id": "aperol",
+    "name": { "es": "Aperol", "en": "Aperol" },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "white-peach-puree",
+    "name": { "es": "Puré de durazno blanco", "en": "White peach puree" },
+    "category": "fresh",
+    "measure": "ml"
+  },
+  {
+    "id": "orange-juice",
+    "name": { "es": "Jugo de naranja", "en": "Orange juice" },
+    "category": "juice",
+    "measure": "ml"
   }
 ]

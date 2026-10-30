@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "french-75",
+  "family": "sparkling-spritz",
+  "base": "gin",
+  "name": { "es": "French 75", "en": "French 75" },
+  "ingredients": [
+    { "ingredientId": "gin", "amount": 30, "unit": "ml" },
+    { "ingredientId": "lemon-juice", "amount": 15, "unit": "ml" },
+    { "ingredientId": "sugar-syrup", "amount": 15, "unit": "ml" },
+    { "ingredientId": "champagne", "amount": 60, "unit": "ml", "topUp": true }
+  ],
+  "technique": "shake",
+  "glass": "flute",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes, menos el champán, en una coctelera.",
+      "Agita bien y cuela en una copa flauta.",
+      "Completa con champán y remueve suavemente."
+    ],
+    "en": [
+      "Add all ingredients except the Champagne to a shaker.",
+      "Shake well and strain into a Champagne flute.",
+      "Top up with Champagne and stir gently."
+    ]
+  },
+  "difficulty": 2,
+  "history": { "es": "Un cóctel de ginebra, limón y champán que se asocia con la Primera Guerra Mundial. Su nombre alude al cañón francés de 75 mm.", "en": "A cocktail of gin, lemon and Champagne associated with the First World War. Its name refers to the French 75 mm field gun." },
+  "sources": ["https://iba-world.com/iba-cocktail/french-75/"]
+}
