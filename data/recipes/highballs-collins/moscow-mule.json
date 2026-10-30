@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "moscow-mule",
+  "family": "highballs-collins",
+  "base": "vodka",
+  "name": { "es": "Moscow Mule", "en": "Moscow Mule" },
+  "ingredients": [
+    { "ingredientId": "vodka", "amount": 45, "unit": "ml" },
+    { "ingredientId": "ginger-beer", "amount": 120, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 10, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "copper-mug",
+  "ice": "cubes",
+  "garnish": { "es": "Rodaja de lima", "en": "Lime slice" },
+  "steps": {
+    "es": [
+      "En una taza de cobre (o un vaso old fashioned) con hielo, combina el vodka y la cerveza de jengibre.",
+      "Añade el jugo de lima y remueve suavemente para integrar los ingredientes."
+    ],
+    "en": [
+      "In a mule cup (or a rocks glass) with ice, combine the vodka and ginger beer.",
+      "Add the lime juice and stir gently to combine all ingredients."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Se suele situar en Estados Unidos hacia los años 40, como una forma de dar salida al vodka con cerveza de jengibre; su taza de cobre es parte de su imagen.", "en": "Usually placed in the United States in the 1940s, as a way to sell vodka with ginger beer; its copper mug is part of its image." },
+  "sources": ["https://iba-world.com/iba-cocktail/moscow-mule/"]
+}

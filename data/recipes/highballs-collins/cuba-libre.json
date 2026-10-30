@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "cuba-libre",
+  "family": "highballs-collins",
+  "base": "rum",
+  "name": { "es": "Cuba Libre", "en": "Cuba Libre" },
+  "ingredients": [
+    { "ingredientId": "white-rum", "amount": 50, "unit": "ml" },
+    { "ingredientId": "cola", "amount": 120, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 10, "unit": "ml" }
+  ],
+  "technique": "build",
+  "glass": "highball",
+  "ice": "cubes",
+  "garnish": { "es": "Gajo de lima", "en": "Lime wedge" },
+  "steps": {
+    "es": [
+      "Prepara todos los ingredientes directamente en un vaso highball lleno de hielo."
+    ],
+    "en": [
+      "Build all ingredients in a highball glass filled with ice."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Nació en Cuba a comienzos del siglo XX, con ron, cola y lima. Su nombre alude a la independencia de la isla.", "en": "Born in Cuba in the early 20th century, with rum, cola and lime. Its name alludes to the island's independence." },
+  "sources": ["https://iba-world.com/iba-cocktail/cuba-libre/"]
+}

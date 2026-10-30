@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "mojito",
+  "family": "highballs-collins",
+  "base": "rum",
+  "name": { "es": "Mojito", "en": "Mojito" },
+  "ingredients": [
+    { "ingredientId": "white-rum", "amount": 45, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 20, "unit": "ml" },
+    { "ingredientId": "mint-sprig", "amount": 6, "unit": "unit" },
+    { "ingredientId": "superfine-sugar", "amount": 2, "unit": "barspoon" },
+    { "ingredientId": "soda-water", "amount": 60, "unit": "ml", "topUp": true }
+  ],
+  "technique": "build",
+  "glass": "highball",
+  "ice": "cubes",
+  "garnish": { "es": "Ramitas de menta y rodaja de lima", "en": "Mint sprigs and lime slice" },
+  "steps": {
+    "es": [
+      "Mezcla las ramas de menta con el azúcar y el jugo de lima.",
+      "Añade un chorrito de agua con gas y llena el vaso con hielo.",
+      "Vierte el ron y completa con agua con gas. Remueve ligeramente para integrar los ingredientes."
+    ],
+    "en": [
+      "Mix the mint sprigs with the sugar and lime juice.",
+      "Add a splash of soda water and fill the glass with ice.",
+      "Pour the rum and top with soda water. Stir lightly to combine all ingredients."
+    ]
+  },
+  "difficulty": 2,
+  "history": { "es": "De origen cubano; su historia exacta es discutida, pero se asocia a La Habana y se hizo famoso en el siglo XX.", "en": "Of Cuban origin; its exact history is disputed, but it is tied to Havana and became famous in the 20th century." },
+  "sources": ["https://iba-world.com/iba-cocktail/mojito/"]
+}
