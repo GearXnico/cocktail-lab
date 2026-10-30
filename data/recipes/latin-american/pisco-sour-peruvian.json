@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "pisco-sour-peruvian",
+  "family": "latin-american",
+  "base": "pisco",
+  "name": {
+    "es": "Pisco Sour (receta peruana)",
+    "en": "Pisco Sour (Peruvian recipe)"
+  },
+  "ingredients": [
+    {
+      "ingredientId": "peruvian-pisco",
+      "amount": 60,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "lemon-juice",
+      "amount": 30,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "sugar-syrup",
+      "amount": 20,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "egg-white",
+      "amount": 1,
+      "unit": "unit"
+    }
+  ],
+  "technique": "shake",
+  "glass": "coupe",
+  "ice": "none",
+  "garnish": {
+    "es": "Unas gotas de amargo de angostura por encima",
+    "en": "A few drops of bitters on top"
+  },
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes a una coctelera con hielo y agita.",
+      "Cuela en una copa enfriada."
+    ],
+    "en": [
+      "Add all ingredients to a shaker with ice and shake.",
+      "Strain into a chilled glass."
+    ]
+  },
+  "difficulty": 2,
+  "history": {
+    "es": "Perú y Chile se disputan el origen del pisco y del Pisco Sour. La versión peruana se atribuye a Victor Vaughen Morris, que la habría servido en Lima en la década de 1920.",
+    "en": "Peru and Chile both claim pisco and the Pisco Sour as their own. The Peruvian version is credited to Victor Vaughen Morris, who is said to have served it in Lima in the 1920s."
+  },
+  "sources": [
+    "https://iba-world.com/iba-cocktail/pisco-sour/"
+  ]
+}

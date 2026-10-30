@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "pisco-sour-chilean",
+  "family": "latin-american",
+  "base": "pisco",
+  "name": {
+    "es": "Pisco Sour (receta chilena)",
+    "en": "Pisco Sour (Chilean recipe)"
+  },
+  "ingredients": [
+    {
+      "ingredientId": "chilean-pisco",
+      "amount": 90,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "gum-syrup",
+      "amount": 30,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "lemon-juice",
+      "amount": 30,
+      "unit": "ml"
+    }
+  ],
+  "technique": "shake",
+  "glass": "coupe",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes a una coctelera con hielo y agita.",
+      "Cuela en una copa enfriada."
+    ],
+    "en": [
+      "Add all ingredients to a shaker with ice and shake.",
+      "Strain into a chilled glass."
+    ]
+  },
+  "difficulty": 1,
+  "history": {
+    "es": "La versión chilena del Pisco Sour lleva pisco, jarabe de goma y limón, sin clara de huevo. Chile y Perú se disputan el origen de esta bebida.",
+    "en": "The Chilean version of the Pisco Sour is pisco, gum syrup and lemon, with no egg white. Chile and Peru both claim the drink as their own."
+  }
+}

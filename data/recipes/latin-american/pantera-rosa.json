@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "pantera-rosa",
+  "family": "latin-american",
+  "base": "pisco",
+  "name": {
+    "es": "Pantera Rosa",
+    "en": "Pantera Rosa"
+  },
+  "ingredients": [
+    {
+      "ingredientId": "chilean-pisco",
+      "amount": 45,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "evaporated-milk",
+      "amount": 60,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "grenadine",
+      "amount": 15,
+      "unit": "ml"
+    }
+  ],
+  "technique": "shake",
+  "glass": "cocktail",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes a una coctelera con hielo y agita.",
+      "Cuela en una copa de cóctel enfriada."
+    ],
+    "en": [
+      "Add all ingredients to a shaker with ice and shake.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  "difficulty": 1,
+  "history": {
+    "es": "Cóctel chileno de pisco, leche evaporada y granadina; su nombre alude al color rosado que le da la granadina.",
+    "en": "A Chilean cocktail of pisco, evaporated milk and grenadine; its name, \"Pink Panther\", alludes to the pink colour the grenadine gives it."
+  }
+}

@@ -1,312 +1,572 @@
 [
   {
     "id": "white-rum",
-    "name": { "es": "Ron blanco", "en": "White rum" },
+    "name": {
+      "es": "Ron blanco",
+      "en": "White rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "lime-juice",
-    "name": { "es": "Jugo de lima", "en": "Lime juice" },
+    "name": {
+      "es": "Jugo de lima",
+      "en": "Lime juice"
+    },
     "category": "juice",
     "measure": "ml"
   },
   {
     "id": "superfine-sugar",
-    "name": { "es": "Azúcar extrafina", "en": "Superfine sugar" },
+    "name": {
+      "es": "Azúcar extrafina",
+      "en": "Superfine sugar"
+    },
     "category": "other",
     "measure": "g"
   },
   {
     "id": "bourbon",
-    "name": { "es": "Bourbon", "en": "Bourbon" },
+    "name": {
+      "es": "Bourbon",
+      "en": "Bourbon"
+    },
     "category": "spirit",
     "base": "whisky",
     "measure": "ml"
   },
   {
     "id": "tequila-blanco",
-    "name": { "es": "Tequila 100% agave", "en": "Tequila 100% agave" },
+    "name": {
+      "es": "Tequila 100% agave",
+      "en": "Tequila 100% agave"
+    },
     "category": "spirit",
     "base": "tequila",
     "measure": "ml"
   },
   {
     "id": "cognac",
-    "name": { "es": "Cognac", "en": "Cognac" },
+    "name": {
+      "es": "Cognac",
+      "en": "Cognac"
+    },
     "category": "spirit",
     "base": "brandy",
     "measure": "ml"
   },
   {
     "id": "gin",
-    "name": { "es": "Ginebra", "en": "Gin" },
+    "name": {
+      "es": "Ginebra",
+      "en": "Gin"
+    },
     "category": "spirit",
     "base": "gin",
     "measure": "ml"
   },
   {
     "id": "triple-sec",
-    "name": { "es": "Triple sec", "en": "Triple sec" },
+    "name": {
+      "es": "Triple sec",
+      "en": "Triple sec"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "green-chartreuse",
-    "name": { "es": "Chartreuse verde", "en": "Green Chartreuse" },
+    "name": {
+      "es": "Chartreuse verde",
+      "en": "Green Chartreuse"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "maraschino-liqueur",
-    "name": { "es": "Licor de marrasquino", "en": "Maraschino liqueur" },
+    "name": {
+      "es": "Licor de marrasquino",
+      "en": "Maraschino liqueur"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "lemon-juice",
-    "name": { "es": "Jugo de limón", "en": "Lemon juice" },
+    "name": {
+      "es": "Jugo de limón",
+      "en": "Lemon juice"
+    },
     "category": "juice",
     "measure": "ml"
   },
   {
     "id": "sugar-syrup",
-    "name": { "es": "Jarabe de azúcar", "en": "Sugar syrup" },
+    "name": {
+      "es": "Jarabe de azúcar",
+      "en": "Sugar syrup"
+    },
     "category": "syrup",
     "measure": "ml"
   },
   {
     "id": "rye-whiskey",
-    "name": { "es": "Whisky de centeno", "en": "Rye whiskey" },
+    "name": {
+      "es": "Whisky de centeno",
+      "en": "Rye whiskey"
+    },
     "category": "spirit",
     "base": "whisky",
     "measure": "ml"
   },
   {
     "id": "sweet-vermouth",
-    "name": { "es": "Vermut rojo dulce", "en": "Sweet red vermouth" },
+    "name": {
+      "es": "Vermut rojo dulce",
+      "en": "Sweet red vermouth"
+    },
     "category": "wine",
     "measure": "ml"
   },
   {
     "id": "dry-vermouth",
-    "name": { "es": "Vermut seco", "en": "Dry vermouth" },
+    "name": {
+      "es": "Vermut seco",
+      "en": "Dry vermouth"
+    },
     "category": "wine",
     "measure": "ml"
   },
   {
     "id": "campari",
-    "name": { "es": "Campari", "en": "Campari" },
+    "name": {
+      "es": "Campari",
+      "en": "Campari"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "absinthe",
-    "name": { "es": "Absenta", "en": "Absinthe" },
+    "name": {
+      "es": "Absenta",
+      "en": "Absinthe"
+    },
     "category": "spirit",
     "measure": "ml"
   },
   {
     "id": "angostura-bitters",
-    "name": { "es": "Amargo de Angostura", "en": "Angostura bitters" },
+    "name": {
+      "es": "Amargo de Angostura",
+      "en": "Angostura bitters"
+    },
     "category": "bitters",
     "measure": "ml"
   },
   {
     "id": "peychauds-bitters",
-    "name": { "es": "Amargo Peychaud's", "en": "Peychaud's bitters" },
+    "name": {
+      "es": "Amargo Peychaud's",
+      "en": "Peychaud's bitters"
+    },
     "category": "bitters",
     "measure": "ml"
   },
   {
     "id": "sugar-cube",
-    "name": { "es": "Terrón de azúcar", "en": "Sugar cube" },
+    "name": {
+      "es": "Terrón de azúcar",
+      "en": "Sugar cube"
+    },
     "category": "other",
     "measure": "unit"
   },
   {
     "id": "water",
-    "name": { "es": "Agua", "en": "Water" },
+    "name": {
+      "es": "Agua",
+      "en": "Water"
+    },
     "category": "other",
     "measure": "ml"
   },
   {
     "id": "vodka",
-    "name": { "es": "Vodka", "en": "Vodka" },
+    "name": {
+      "es": "Vodka",
+      "en": "Vodka"
+    },
     "category": "spirit",
     "base": "vodka",
     "measure": "ml"
   },
   {
     "id": "soda-water",
-    "name": { "es": "Agua con gas", "en": "Soda water" },
+    "name": {
+      "es": "Agua con gas",
+      "en": "Soda water"
+    },
     "category": "soda",
     "measure": "ml"
   },
   {
     "id": "ginger-beer",
-    "name": { "es": "Cerveza de jengibre", "en": "Ginger beer" },
+    "name": {
+      "es": "Cerveza de jengibre",
+      "en": "Ginger beer"
+    },
     "category": "soda",
     "measure": "ml"
   },
   {
     "id": "cola",
-    "name": { "es": "Cola", "en": "Cola" },
+    "name": {
+      "es": "Cola",
+      "en": "Cola"
+    },
     "category": "soda",
     "measure": "ml"
   },
   {
     "id": "pink-grapefruit-soda",
-    "name": { "es": "Gaseosa de pomelo rosado", "en": "Pink grapefruit soda" },
+    "name": {
+      "es": "Gaseosa de pomelo rosado",
+      "en": "Pink grapefruit soda"
+    },
     "category": "soda",
     "measure": "ml"
   },
   {
     "id": "mint-sprig",
-    "name": { "es": "Rama de menta", "en": "Mint sprig" },
+    "name": {
+      "es": "Rama de menta",
+      "en": "Mint sprig"
+    },
     "category": "fresh",
     "measure": "unit"
   },
   {
     "id": "prosecco",
-    "name": { "es": "Prosecco", "en": "Prosecco" },
+    "name": {
+      "es": "Prosecco",
+      "en": "Prosecco"
+    },
     "category": "wine",
     "base": "sparkling-wine",
     "measure": "ml"
   },
   {
     "id": "champagne",
-    "name": { "es": "Champán", "en": "Champagne" },
+    "name": {
+      "es": "Champán",
+      "en": "Champagne"
+    },
     "category": "wine",
     "base": "sparkling-wine",
     "measure": "ml"
   },
   {
     "id": "aperol",
-    "name": { "es": "Aperol", "en": "Aperol" },
+    "name": {
+      "es": "Aperol",
+      "en": "Aperol"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "white-peach-puree",
-    "name": { "es": "Puré de durazno blanco", "en": "White peach puree" },
+    "name": {
+      "es": "Puré de durazno blanco",
+      "en": "White peach puree"
+    },
     "category": "fresh",
     "measure": "ml"
   },
   {
     "id": "orange-juice",
-    "name": { "es": "Jugo de naranja", "en": "Orange juice" },
+    "name": {
+      "es": "Jugo de naranja",
+      "en": "Orange juice"
+    },
     "category": "juice",
     "measure": "ml"
   },
   {
     "id": "amber-jamaican-rum",
-    "name": { "es": "Ron ámbar jamaiquino", "en": "Amber Jamaican rum" },
+    "name": {
+      "es": "Ron ámbar jamaiquino",
+      "en": "Amber Jamaican rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "martinique-molasses-rhum",
-    "name": { "es": "Ron de melaza de Martinica", "en": "Martinique molasses rhum" },
+    "name": {
+      "es": "Ron de melaza de Martinica",
+      "en": "Martinique molasses rhum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "orange-curacao",
-    "name": { "es": "Curaçao de naranja", "en": "Orange curaçao" },
+    "name": {
+      "es": "Curaçao de naranja",
+      "en": "Orange curaçao"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "orgeat",
-    "name": { "es": "Orgeat", "en": "Orgeat syrup" },
+    "name": {
+      "es": "Orgeat",
+      "en": "Orgeat syrup"
+    },
     "category": "syrup",
     "measure": "ml"
   },
   {
     "id": "coconut-cream",
-    "name": { "es": "Crema de coco", "en": "Coconut cream" },
+    "name": {
+      "es": "Crema de coco",
+      "en": "Coconut cream"
+    },
     "category": "other",
     "measure": "ml"
   },
   {
     "id": "pineapple-juice",
-    "name": { "es": "Jugo de piña", "en": "Pineapple juice" },
+    "name": {
+      "es": "Jugo de piña",
+      "en": "Pineapple juice"
+    },
     "category": "juice",
     "measure": "ml"
   },
   {
     "id": "jamaican-dark-rum",
-    "name": { "es": "Ron oscuro jamaiquino", "en": "Jamaican dark rum" },
+    "name": {
+      "es": "Ron oscuro jamaiquino",
+      "en": "Jamaican dark rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "gold-puerto-rican-rum",
-    "name": { "es": "Ron dorado de Puerto Rico", "en": "Gold Puerto Rican rum" },
+    "name": {
+      "es": "Ron dorado de Puerto Rico",
+      "en": "Gold Puerto Rican rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "demerara-rum",
-    "name": { "es": "Ron demerara", "en": "Demerara rum" },
+    "name": {
+      "es": "Ron demerara",
+      "en": "Demerara rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "falernum",
-    "name": { "es": "Falernum", "en": "Falernum" },
+    "name": {
+      "es": "Falernum",
+      "en": "Falernum"
+    },
     "category": "syrup",
     "measure": "ml"
   },
   {
     "id": "donns-mix",
-    "name": { "es": "Donn's Mix", "en": "Donn's Mix" },
+    "name": {
+      "es": "Donn's Mix",
+      "en": "Donn's Mix"
+    },
     "category": "other",
     "measure": "ml"
   },
   {
     "id": "grenadine",
-    "name": { "es": "Granadina", "en": "Grenadine syrup" },
+    "name": {
+      "es": "Granadina",
+      "en": "Grenadine syrup"
+    },
     "category": "syrup",
     "measure": "ml"
   },
   {
     "id": "pernod",
-    "name": { "es": "Pernod", "en": "Pernod" },
+    "name": {
+      "es": "Pernod",
+      "en": "Pernod"
+    },
     "category": "liqueur",
     "measure": "ml"
   },
   {
     "id": "blackstrap-rum",
-    "name": { "es": "Ron blackstrap", "en": "Blackstrap rum" },
+    "name": {
+      "es": "Ron blackstrap",
+      "en": "Blackstrap rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "demerara-syrup",
-    "name": { "es": "Jarabe de azúcar demerara", "en": "Demerara sugar syrup" },
+    "name": {
+      "es": "Jarabe de azúcar demerara",
+      "en": "Demerara sugar syrup"
+    },
     "category": "syrup",
     "measure": "ml"
   },
   {
     "id": "jamaican-rum",
-    "name": { "es": "Ron jamaiquino", "en": "Jamaican rum" },
+    "name": {
+      "es": "Ron jamaiquino",
+      "en": "Jamaican rum"
+    },
     "category": "spirit",
     "base": "rum",
     "measure": "ml"
   },
   {
     "id": "sugar-cane-juice",
-    "name": { "es": "Jugo de caña", "en": "Sugar cane juice" },
+    "name": {
+      "es": "Jugo de caña",
+      "en": "Sugar cane juice"
+    },
     "category": "juice",
+    "measure": "ml"
+  },
+  {
+    "id": "peruvian-pisco",
+    "name": {
+      "es": "Pisco peruano",
+      "en": "Peruvian pisco"
+    },
+    "category": "spirit",
+    "base": "pisco",
+    "measure": "ml"
+  },
+  {
+    "id": "chilean-pisco",
+    "name": {
+      "es": "Pisco chileno",
+      "en": "Chilean pisco"
+    },
+    "category": "spirit",
+    "base": "pisco",
+    "measure": "ml"
+  },
+  {
+    "id": "cachaca",
+    "name": {
+      "es": "Cachaça",
+      "en": "Cachaça"
+    },
+    "category": "spirit",
+    "base": "cachaca",
+    "measure": "ml"
+  },
+  {
+    "id": "egg-white",
+    "name": {
+      "es": "Clara de huevo",
+      "en": "Egg white"
+    },
+    "category": "other",
+    "measure": "unit"
+  },
+  {
+    "id": "egg-yolk",
+    "name": {
+      "es": "Yema de huevo",
+      "en": "Egg yolk"
+    },
+    "category": "other",
+    "measure": "unit"
+  },
+  {
+    "id": "lime",
+    "name": {
+      "es": "Lima",
+      "en": "Lime"
+    },
+    "category": "fresh",
+    "measure": "unit"
+  },
+  {
+    "id": "gum-syrup",
+    "name": {
+      "es": "Jarabe de goma",
+      "en": "Gum syrup"
+    },
+    "category": "syrup",
+    "measure": "ml"
+  },
+  {
+    "id": "pineapple-ice-cream",
+    "name": {
+      "es": "Helado de piña",
+      "en": "Pineapple ice cream"
+    },
+    "category": "other",
+    "measure": "unit"
+  },
+  {
+    "id": "pipeno-wine",
+    "name": {
+      "es": "Vino pipeño",
+      "en": "Pipeño wine"
+    },
+    "category": "wine",
+    "base": "wine",
+    "measure": "ml"
+  },
+  {
+    "id": "port-wine",
+    "name": {
+      "es": "Oporto o vino dulce",
+      "en": "Port or sweet wine"
+    },
+    "category": "wine",
+    "base": "wine",
+    "measure": "ml"
+  },
+  {
+    "id": "creme-de-cacao",
+    "name": {
+      "es": "Licor de cacao",
+      "en": "Cacao liqueur"
+    },
+    "category": "liqueur",
+    "measure": "ml"
+  },
+  {
+    "id": "evaporated-milk",
+    "name": {
+      "es": "Leche evaporada",
+      "en": "Evaporated milk"
+    },
+    "category": "other",
     "measure": "ml"
   }
 ]

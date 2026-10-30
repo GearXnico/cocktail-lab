@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "caipirinha",
+  "family": "latin-american",
+  "base": "cachaca",
+  "name": {
+    "es": "Caipirinha",
+    "en": "Caipirinha"
+  },
+  "ingredients": [
+    {
+      "ingredientId": "cachaca",
+      "amount": 60,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "lime",
+      "amount": 1,
+      "unit": "unit"
+    },
+    {
+      "ingredientId": "superfine-sugar",
+      "amount": 4,
+      "unit": "barspoon"
+    }
+  ],
+  "technique": "build",
+  "glass": "rocks",
+  "ice": "crushed",
+  "steps": {
+    "es": [
+      "Pon la lima cortada en trozos pequeños y el azúcar en el vaso y machaca suavemente.",
+      "Llena el vaso con hielo picado, añade la cachaça y remueve suavemente."
+    ],
+    "en": [
+      "Put the lime, cut into small wedges, and the sugar into the glass and muddle gently.",
+      "Fill the glass with cracked ice, add the cachaça and stir gently to combine."
+    ]
+  },
+  "difficulty": 1,
+  "history": {
+    "es": "Es el cóctel nacional de Brasil, hecho con cachaça, el destilado brasileño de caña de azúcar.",
+    "en": "Brazil's national cocktail, made with cachaça, the Brazilian sugar cane spirit."
+  },
+  "sources": [
+    "https://iba-world.com/iba-cocktail/caipirinha/"
+  ]
+}

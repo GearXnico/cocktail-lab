@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "terremoto",
+  "family": "latin-american",
+  "base": "wine",
+  "name": {
+    "es": "Terremoto",
+    "en": "Terremoto"
+  },
+  "ingredients": [
+    {
+      "ingredientId": "pineapple-ice-cream",
+      "amount": 1,
+      "unit": "unit"
+    },
+    {
+      "ingredientId": "grenadine",
+      "amount": 22.5,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "pipeno-wine",
+      "amount": 200,
+      "unit": "ml",
+      "topUp": true
+    }
+  ],
+  "technique": "build",
+  "glass": "collins",
+  "ice": "none",
+  "steps": {
+    "es": [
+      "Pon la bola de helado de piña en un vaso grande.",
+      "Completa con vino pipeño y termina con la granadina."
+    ],
+    "en": [
+      "Put the scoop of pineapple ice cream in a large glass.",
+      "Top with pipeño wine and finish with the grenadine."
+    ]
+  },
+  "difficulty": 1,
+  "history": {
+    "es": "Bebida chilena de vino pipeño y helado de piña. Su nombre, \"terremoto\", alude a los temblores que se dice que deja en quien lo bebe.",
+    "en": "A Chilean drink of pipeño wine and pineapple ice cream. Its name, \"earthquake\", alludes to the tremors it is said to leave in whoever drinks it."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "vaina-chilena",
+  "family": "latin-american",
+  "base": "wine",
+  "name": {
+    "es": "Vaina chilena",
+    "en": "Vaina chilena"
+  },
+  "ingredients": [
+    {
+      "ingredientId": "port-wine",
+      "amount": 60,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "creme-de-cacao",
+      "amount": 30,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "cognac",
+      "amount": 15,
+      "unit": "ml"
+    },
+    {
+      "ingredientId": "egg-yolk",
+      "amount": 0.5,
+      "unit": "unit"
+    },
+    {
+      "ingredientId": "gum-syrup",
+      "amount": 15,
+      "unit": "ml"
+    }
+  ],
+  "technique": "shake",
+  "glass": "cocktail",
+  "ice": "none",
+  "garnish": {
+    "es": "Canela molida por encima",
+    "en": "Ground cinnamon on top"
+  },
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes a una coctelera con hielo y agita con fuerza.",
+      "Cuela en una copa de cóctel enfriada y espolvorea la canela."
+    ],
+    "en": [
+      "Add all ingredients to a shaker with ice and shake hard.",
+      "Strain into a chilled cocktail glass and dust with the cinnamon."
+    ]
+  },
+  "difficulty": 2,
+  "history": {
+    "es": "Bebida chilena de oporto o vino dulce, licor de cacao y yema de huevo, que se sirve con canela por encima.",
+    "en": "A Chilean drink of port or sweet wine, cacao liqueur and egg yolk, served with cinnamon on top."
+  }
+}
