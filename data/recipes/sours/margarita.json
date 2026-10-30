@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "margarita",
+  "family": "sours",
+  "base": "tequila",
+  "name": { "es": "Margarita", "en": "Margarita" },
+  "ingredients": [
+    { "ingredientId": "tequila-blanco", "amount": 50, "unit": "ml" },
+    { "ingredientId": "triple-sec", "amount": 20, "unit": "ml" },
+    { "ingredientId": "lime-juice", "amount": 15, "unit": "ml" }
+  ],
+  "technique": "shake",
+  "glass": "cocktail",
+  "ice": "none",
+  "garnish": { "es": "Medio borde de sal (opcional)", "en": "Half salt rim (optional)" },
+  "steps": {
+    "es": [
+      "Añade todos los ingredientes en una coctelera con hielo.",
+      "Agita y cuela en una copa de cóctel enfriada."
+    ],
+    "en": [
+      "Add all ingredients into a shaker with ice.",
+      "Shake and strain into a chilled cocktail glass."
+    ]
+  },
+  "difficulty": 1,
+  "history": { "es": "Su origen es disputado: varias historias lo sitúan en México y Estados Unidos entre los años 1930 y 1940. Es una variante del Daisy, con tequila.", "en": "Its origin is disputed: several stories place it in Mexico and the United States in the 1930s and 1940s. It is a tequila variation of the Daisy." },
+  "sources": ["https://iba-world.com/iba-cocktail/margarita/"]
+}
