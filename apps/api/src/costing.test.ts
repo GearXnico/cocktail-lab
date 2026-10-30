@@ -1,5 +1,5 @@
 import type { Ingredient, Recipe } from '@cocktail-lab/core';
-import type { FastifyInstance } from 'fastify';
+import type { FastifyBaseLogger, FastifyInstance } from 'fastify';
 import { afterEach, describe, expect, it } from 'vitest';
 import { buildApp } from './app.js';
 
@@ -211,6 +211,57 @@ describe('POST /api/v1/costing', () => {
     });
     expect(response.statusCode).toBe(413);
     expect(response.json()).toEqual({ error: 'Bad Request' });
+  });
+
+  it('never logs values from the body', async () => {
+    const logged: string[] = [];
+    // Fastify logs `{ req }` and `{ res }` with the raw request and reply, which
+    // hold the payload; pino's serializers (the ones `logger: true` uses) keep
+    // only method, url and status code. The fake applies the same reduction and
+    // records everything else, including errors, as it receives it.
+    const record = (...args: unknown[]): void => {
+      logged.push(
+        JSON.stringify(args, function (this: unknown, key: string, value: unknown) {
+          const object = value as { method?: string; url?: string; statusCode?: number; message?: string };
+          if (key === 'req') return { method: object.method, url: object.url };
+          if (key === 'res') return { statusCode: object.statusCode };
+          if (value instanceof Error) return { message: value.message, stack: value.stack };
+          return value;
+        }),
+      );
+    };
+    const fake: Record<string, unknown> = {
+      level: 'trace',
+      fatal: record,
+      error: record,
+      warn: record,
+      info: record,
+      debug: record,
+      trace: record,
+      silent: record,
+    };
+    fake['child'] = () => fake;
+    app = buildApp({
+      catalogue: { ingredients, recipes: [daiquiri] },
+      loggerInstance: fake as unknown as FastifyBaseLogger,
+    });
+    const url = '/api/v1/costing';
+    const marked = { ...withRecipe, prices: [{ ...prices[0], price: 98765.4321 }], pad: 'LEAKMARK' };
+    await app.inject({ method: 'POST', url, payload: { ...withRecipe, prices: [{ ...prices[0], price: 98765.4321 }] } });
+    await app.inject({ method: 'POST', url, payload: marked });
+    await app.inject({ method: 'POST', url, payload: { ...marked, recipeId: 'nope', pad: undefined } });
+    await app.inject({
+      method: 'POST',
+      url,
+      headers: { 'content-type': 'application/json' },
+      payload: '{"currency":"LEAKMARK",',
+    });
+    await app.inject({ method: 'POST', url, payload: { ...marked, pad: 'LEAKMARK'.repeat(4000) } });
+
+    expect(logged.length).toBeGreaterThan(0);
+    for (const entry of logged) {
+      expect(entry).not.toMatch(/98765|LEAKMARK/);
+    }
   });
 
   it('rejects malformed JSON without echoing it', async () => {
