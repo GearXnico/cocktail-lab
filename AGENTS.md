@@ -6,7 +6,7 @@ cocktail-lab helps people learn, explore and cost cocktails: bilingual recipes, 
 
 ## Status
 
-`packages/core` holds the Zod schemas for ingredients and recipes, `validateCatalogue`, unit conversion (including ml → oz for display) and costing; `data/` holds the ingredient catalogue and one sample recipe (Daiquiri). `packages/core` also has the recipe search (`searchRecipes`). `apps/api` serves recipes and ingredients under `/api/v1` (costing comes in the next step); `apps/web` is still a placeholder. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
+`packages/core` holds the Zod schemas for ingredients and recipes, `validateCatalogue`, unit conversion (including ml → oz for display) and costing; `data/` holds the ingredient catalogue and one sample recipe (Daiquiri). `packages/core` also has the recipe search (`searchRecipes`). `apps/api` serves recipes, ingredients and stateless costing (`POST /costing`) under `/api/v1`; `apps/web` is still a placeholder. The v1 plan is in [docs/design/v1.md](docs/design/v1.md), and the decisions behind it are in [docs/adr/](docs/adr/).
 
 ## Stack
 
