@@ -16,7 +16,7 @@ cocktail-lab helps people learn, explore and cost cocktails: bilingual recipes, 
 - Vitest 5, one project per workspace (`vitest.config.ts`).
 - Zod 4.6.7 in `packages/core` (schemas); recipe data is JSON in `data/`, checked by `scripts/validate-data.ts`.
 - Fastify 5 with `fastify-type-provider-zod` in `apps/api`; the API loads and validates `data/` at startup and does not start if it is invalid.
-- Planned, added by the step of the plan that needs them: React + Vite, react-i18next; three.js in v2.
+- Planned, added by the step of the plan that needs them: React + Vite, react-i18next, three.js (3D viewer, loaded on demand).
 
 ## Commands
 
