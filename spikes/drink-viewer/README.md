@@ -11,29 +11,29 @@ npm run dev      # http://127.0.0.1:5199/
 npm run build    # tsc --noEmit + vite build
 ```
 
-URL parameters: `?recipe=terremoto&step=2&glass=tiki-mug&ice=large-cube`, and `?nowebgl` to see the fallback message. The Glass and Ice selects override the recipe, because no recipe uses `nick-and-nora`, `tiki-mug` or `large-cube` yet. Steps mode follows the recipe: glass, one step per ingredient line in the recipe's order (ice where `iceAfter` puts it), technique, garnish. Each step is labelled with what is added. Animations are scripted, and instant under `prefers-reduced-motion`.
+URL parameters: `?recipe=manhattan&step=0&glass=tiki-mug&ice=large-cube&technique=throw`, and `?nowebgl` to see the fallback message. The Glass, Ice and Technique selects override the recipe, because no recipe uses `nick-and-nora`, `tiki-mug`, `large-cube`, `dry-shake`, `throw` or `swizzle` yet. Steps mode follows the recipe. The technique picks the vessel, with no data field: shaker tin (shake, dry-shake), mixing glass (stir), blender jar (blend), two tins (throw), the serving glass (build, swizzle). With a vessel the steps are: glass, each ingredient into the vessel, ice into the vessel, technique, serving ice, strain or pour, top-ups, garnish. Each ingredient pours in its own colour and the liquid reaches the drink's colour during the technique. Animations are scripted, and instant under `prefers-reduced-motion`.
 
 ## Hint fields it needed
 
-All in [src/visual-hints.ts](src/visual-hints.ts). Keyed by recipe id, the candidate recipe-schema additions:
+All in [src/visual-hints.ts](src/visual-hints.ts). The first four are keyed by recipe id (candidate recipe fields), the last four by ingredient id (candidate catalogue fields):
 
-- `color` (`#rrggbb`): all 31 recipes.
-- `garnish`: `{lime,lemon,orange}-{wheel,wedge,twist}`, `cherry`, `olive`, `mint`, `pineapple`, `salt-rim`, `bitters-drops`, `spice-dusting`. Compared with the ADR list it adds `lime-twist` (Mai Tai); `lemon-wedge` and `orange-wedge` come free with the pattern.
-- `cloudy` (boolean): shaken, juice or cream drinks are opaque, stirred ones are see-through. 18 recipes.
-- `topColor`: second tone for the `topUp` line. 3 recipes. `foam` (colour): egg-white head. 2 recipes.
-- `layers` (`{ color, share }[]`, bottom to top) and `scoop` (colour of the floating ice cream): Terremoto.
-- `iceAfter` (number of ingredient lines added before the ice, default 0): 5 recipes. The written steps say when the ice goes in, but only as prose.
-- Keyed by ingredient id, the candidate catalogue additions: `solid` (`scoop`, `sugar-cube`, `sugar`, `mint-leaves`, `lime-wedges`; 5 ingredients drop in instead of pouring) and `ml` (volume of one unit; egg white and yolk).
+- `color` (`#rrggbb`): all 31 recipes. `cloudy` (opaque liquid): 18. `topColor` (second tone of the `topUp` line): 3. `foam` (colour of the egg-white head): 2.
+- `garnish`: `{lime,lemon,orange}-{wheel,wedge,twist}`, `cherry`, `olive`, `mint`, `pineapple`, `salt-rim`, `bitters-drops`, `spice-dusting`.
+- `layers` (`{ color, share }[]`) and `scoop` (colour of the floating ice cream): Terremoto. A layered drink is not stirred.
+- `iceAfter` (ingredient lines added before the serving ice, default 0): 5 recipes, all built in the glass.
+- Ingredient `color` (provisional, 55 ingredients): the colour it pours in. A clear liquid is as see-through as its colour is pale, so the design's `color` is enough for spirits.
+- Ingredient `cloudy` (11 ingredients: juices, cream, milk, puree, orgeat, yolk): opaque whatever the colour. The v1 design does not have it.
+- Ingredient `solid` (`scoop`, `sugar-cube`, `sugar`, `mint-leaves`, `lime-wedges`; 5 ingredients): the design's `form` says pour, drop or scoop, but not which shape drops.
+- Ingredient `unitMl` (egg white and yolk): the volume of one unit of a liquid counted in units.
 
 ## Build size (production, gzip)
 
-three.js 0.187 is 150.3 KB and the viewer code 8.2 KB: 158.5 KB, both loaded on demand. The page itself, with the 31 recipes and the ingredient catalogue as JSON, is 14.0 KB. The viewer only fits v1's 200 KB budget as a dynamic `import()`, which is how this page loads it.
+three.js 0.187 is 150.3 KB and the viewer code 10.4 KB: 160.7 KB, both loaded on demand (budget 300 KB). The page itself, with the 31 recipes and the ingredient catalogue as JSON, is 15.2 KB.
 
 ## What looked weak
 
-- Glass is a blending trick, not refraction: thick bases glow white and the liquid does not bend behind the wall.
-- Ice is drawn over the liquid, so it looks pale and flat in dark drinks and disappears inside cloudy ones; so do the mint leaves, lime wedges and sugar once a cloudy drink covers them.
-- Every pour has the drink's final colour (gin pours red in a Negroni): true colours need a colour per catalogue ingredient. The stream starts in mid-air, with no bottle or jigger.
-- Every glass fills to the same line and the level rises by share of ml in height, not by volume; ice and solids displace nothing.
-- The ingredient order is the data's, which is not always the written steps' (Mojito, Old Fashioned, Terremoto's grenadine). Shaken drinks are poured into the serving glass and the glass wobbles, which is not what a shake is. A layered drink has an empty technique step.
-- The tiki mug is a wavy brown vase; the mint sprig and the pineapple wedge are crude. No bubbles, half salt rim or half wheel; garnish positions are fixed slots and can collide. The hidden-tab pause is coded but was not observed.
+- Glass is a blending trick, not refraction: thick bases glow white. Ice is drawn over the liquid, so it looks pale in dark drinks and vanishes in cloudy ones, as do mint, lime and sugar.
+- Steel tins hide what is in them: in a shaker the ingredient colours only show in the stream and on the surface seen from above. The mixing glass and the blender show them as bands. No strainer, jigger or bottle: streams start in mid-air and the vessel's ice stays in by itself. The shaker's lid appears only for the shake.
+- Every container fills to a fixed line and the level rises by share of ml in height, not by volume; ice and solids displace nothing.
+- A top-up skips the vessel and is poured over the strained drink; that rule comes from `topUp`, not from the written steps. The ingredient order is the data's, which is not always the written steps' (Mojito, Old Fashioned, Terremoto's grenadine).
+- Not done: `heat` with its pot and the four new glasses of the v1 design (not in the schema yet), bubbles, half salt rim. The tiki mug, mint sprig and pineapple wedge are crude. The hidden-tab pause is coded but was not observed.

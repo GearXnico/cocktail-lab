@@ -22,7 +22,7 @@ export function createViewer(container: HTMLElement, reduced: MediaQueryList): V
       }
       drink = buildDrink(recipe, hint, options);
       stage.scene.add(drink.object);
-      stage.frame(drink.height, drink.radius);
+      stage.frame(drink);
     },
     setStep(step, animate) {
       drink?.setStep(step, animate && !reduced.matches);

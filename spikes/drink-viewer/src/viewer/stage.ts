@@ -15,14 +15,22 @@ import {
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
+export interface Framing {
+  height: number;
+  radius: number;
+  centerX: number;
+  shadowRadius: number;
+}
+
 export interface Stage {
   scene: Scene;
-  frame(height: number, radius: number): void;
+  frame(framing: Framing): void;
   invalidate(): void;
   stats(): string;
 }
 
 const FOV = 32;
+const BASE_RADIUS = 10;
 
 function contactShadow(): Mesh | null {
   const canvas = document.createElement('canvas');
@@ -66,7 +74,7 @@ export function createStage(
   const key = new DirectionalLight(0xffffff, 1.4);
   key.position.set(6, 14, 8);
   const base = new Mesh(
-    new CylinderGeometry(10, 10.5, 0.8, 72),
+    new CylinderGeometry(BASE_RADIUS, BASE_RADIUS + 0.5, 0.8, 72),
     new MeshStandardMaterial({ color: 0xd8d0c4, roughness: 0.85 }),
   );
   base.position.y = -0.42;
@@ -126,15 +134,18 @@ export function createStage(
 
   return {
     scene,
-    frame(height, radius) {
+    frame({ height, radius, centerX, shadowRadius }) {
       const direction = camera.position.clone().sub(controls.target).normalize();
       const size = Math.max((height + 4) * 1.25, radius * 3.4);
       const distance = size / 2 / Math.tan((FOV * Math.PI) / 360) / Math.min(camera.aspect, 1);
-      controls.target.set(0, (height + 2) / 2, 0);
+      controls.target.set(centerX, (height + 2) / 2, 0);
       camera.position.copy(controls.target).addScaledVector(direction, distance);
       controls.minDistance = distance * 0.45;
       controls.maxDistance = distance * 1.8;
-      shadow?.scale.setScalar(radius * 1.6);
+      const spread = Math.max(1, (radius + 3) / BASE_RADIUS);
+      base.position.x = centerX;
+      base.scale.set(spread, 1, spread);
+      shadow?.scale.setScalar(shadowRadius * 1.6);
       controls.update();
       dirty = true;
     },

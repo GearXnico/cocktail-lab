@@ -13,9 +13,19 @@ export const GLASSES = [
 
 export const ICES = ['none', 'cubes', 'large-cube', 'crushed'] as const;
 
+export const TECHNIQUES = [
+  'shake',
+  'dry-shake',
+  'stir',
+  'build',
+  'throw',
+  'swizzle',
+  'blend',
+] as const;
+
 export type Glass = (typeof GLASSES)[number];
 export type Ice = (typeof ICES)[number];
-export type Technique = 'shake' | 'dry-shake' | 'stir' | 'build' | 'throw' | 'swizzle' | 'blend';
+export type Technique = (typeof TECHNIQUES)[number];
 
 interface Localized {
   es: string;

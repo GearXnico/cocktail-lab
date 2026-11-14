@@ -14,9 +14,9 @@ import {
 import type { Glass } from '../recipes';
 import { at, offsetOutward, radiusAt, smooth, toVectors, type Pt } from './profile';
 
-type Shell = 'glass' | 'copper' | 'ceramic';
+type Shell = 'glass' | 'copper' | 'ceramic' | 'steel';
 
-interface GlassSpec {
+export interface GlassSpec {
   foot: readonly Pt[];
   cavity: readonly Pt[];
   outer?: readonly Pt[];
@@ -138,6 +138,9 @@ function shellMaterial(shell: Shell): Material {
   if (shell === 'copper') {
     return new MeshStandardMaterial({ color: 0xb87333, metalness: 1, roughness: 0.3 });
   }
+  if (shell === 'steel') {
+    return new MeshStandardMaterial({ color: 0xcfd3d6, metalness: 1, roughness: 0.28 });
+  }
   if (shell === 'ceramic') {
     return new MeshStandardMaterial({ color: 0x6b4a34, roughness: 0.6 });
   }
@@ -167,8 +170,9 @@ function outline(spec: GlassSpec, cavity: Vector2[]): Vector2[] {
   return [...foot, ...offsetOutward(cavity, spec.wall).filter((p) => p.x > footRadius)];
 }
 
-export function buildGlass(kind: Glass): GlassModel {
-  const spec = SPECS[kind];
+export const buildGlass = (kind: Glass): GlassModel => buildShell(SPECS[kind]);
+
+export function buildShell(spec: GlassSpec): GlassModel {
   const raw = toVectors(spec.cavity);
   const cavity = spec.curved ? smooth(raw) : raw;
   const outer = outline(spec, cavity);

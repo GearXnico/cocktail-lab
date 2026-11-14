@@ -11,9 +11,16 @@ import { radiusAt } from './profile';
 
 export interface Stream {
   object: Mesh;
-  set(topY: number, bottomY: number, color: Color, thin: boolean): void;
+  set(x: number, topY: number, bottomY: number, look: StreamLook, thin: boolean): void;
   hide(): void;
 }
+
+interface StreamLook {
+  color: Color | string;
+  opacity: number;
+}
+
+const MIN_STREAM_OPACITY = 0.3;
 
 export function barSpoon(glass: GlassModel): Group {
   const length = glass.rimY - glass.bottomY + 5;
@@ -33,20 +40,21 @@ export function barSpoon(glass: GlassModel): Group {
 }
 
 export function buildStream(): Stream {
-  const material = new MeshStandardMaterial({ roughness: 0.2, transparent: true, opacity: 0.85 });
+  const material = new MeshStandardMaterial({ roughness: 0.2, transparent: true });
   const object = new Mesh(new CylinderGeometry(1, 0.75, 1, 10, 1, true), material);
   object.renderOrder = 1;
   object.visible = false;
 
   return {
     object,
-    set(topY, bottomY, color, thin) {
+    set(x, topY, bottomY, look, thin) {
       const length = topY - bottomY;
       const width = thin ? 0.05 : 0.13;
       object.visible = length > 0.02;
       object.scale.set(width, Math.max(length, 0.02), width);
-      object.position.y = (topY + bottomY) / 2;
-      material.color.copy(color);
+      object.position.set(x, (topY + bottomY) / 2, 0);
+      material.color.set(look.color);
+      material.opacity = Math.max(look.opacity, MIN_STREAM_OPACITY);
     },
     hide() {
       object.visible = false;

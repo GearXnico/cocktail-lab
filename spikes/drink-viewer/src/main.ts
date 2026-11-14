@@ -1,6 +1,6 @@
 import './style.css';
-import { GLASSES, ICES, ingredientNames, recipes, type Recipe } from './recipes';
-import { planSteps, type Step } from './steps';
+import { GLASSES, ICES, TECHNIQUES, ingredientNames, recipes, type Recipe } from './recipes';
+import { VESSELS, planSteps, type Step, type Vessel } from './steps';
 import type { Viewer } from './viewer';
 import { fallbackHint, visualHints } from './visual-hints';
 
@@ -23,6 +23,14 @@ const prev = el('prev', HTMLButtonElement);
 const next = el('next', HTMLButtonElement);
 const glassSelect = el('glass', HTMLSelectElement);
 const iceSelect = el('ice', HTMLSelectElement);
+const techniqueSelect = el('technique', HTMLSelectElement);
+
+const VESSEL_NAMES: Record<Vessel, string> = {
+  shaker: 'shaker',
+  'mixing-glass': 'mixing glass',
+  blender: 'blender',
+  tins: 'tin',
+};
 
 const first = recipes.find((recipe) => recipe.id === params.get('recipe')) ?? recipes[0];
 if (!first) throw new Error('No recipes found in data/recipes');
@@ -35,23 +43,32 @@ let viewer: Viewer | null = null;
 const hintFor = (recipe: Recipe) => visualHints[recipe.id] ?? fallbackHint;
 const glass = () => GLASSES.find((value) => value === glassSelect.value) ?? current.glass;
 const ice = () => ICES.find((value) => value === iceSelect.value) ?? current.ice;
+const technique = () =>
+  TECHNIQUES.find((value) => value === techniqueSelect.value) ?? current.technique;
 const lastStep = () => plan.length - 1;
 
 function describe(item: Step): string {
+  const vessel = VESSELS[technique()];
+  const vesselName = vessel ? VESSEL_NAMES[vessel] : 'glass';
   switch (item.kind) {
     case 'glass':
       return `Glass: ${glass()}`;
     case 'ice':
-      return `Ice: ${ice()}`;
-    case 'technique':
-      return `Technique: ${current.technique}`;
+      return item.into === 'vessel' ? `Ice into the ${vesselName}` : `Ice into the glass: ${ice()}`;
+    case 'technique': {
+      const ice = technique() === 'dry-shake' ? (item.iced ? ', with ice' : ', without ice') : '';
+      return `Technique: ${technique()}${ice}`;
+    }
+    case 'strain':
+      return `${vessel === 'blender' ? 'Pour' : 'Strain'} into the glass`;
     case 'garnish':
       return `Garnish: ${current.garnish?.[lang] ?? (hintFor(current).garnish ?? []).join(', ')}`;
     default: {
       const line = current.ingredients[item.line];
       if (!line) return '';
       const name = ingredientNames.get(line.ingredientId)?.[lang] ?? line.ingredientId;
-      return `${line.topUp ? 'Top up' : 'Add'}: ${name}, ${String(line.amount)} ${line.unit}`;
+      const verb = line.topUp ? 'Top up' : item.into === 'vessel' ? `Into the ${vesselName}` : 'Add';
+      return `${verb}: ${name}, ${String(line.amount)} ${line.unit}`;
     }
   }
 }
@@ -74,9 +91,15 @@ function renderStep(animate: boolean): void {
 }
 
 function rebuild(): void {
-  plan = planSteps(current, hintFor(current), ice());
+  plan = planSteps(current, hintFor(current), ice(), technique());
   step = stepsToggle.checked ? Math.min(Math.max(step, 0), lastStep()) : lastStep();
-  viewer?.show(current, hintFor(current), { glass: glass(), ice: ice(), steps: plan });
+  viewer?.show(current, hintFor(current), {
+    glass: glass(),
+    ice: ice(),
+    technique: technique(),
+    steps: plan,
+    staged: stepsToggle.checked,
+  });
   renderStep(false);
 }
 
@@ -85,6 +108,7 @@ function select(recipe: Recipe): void {
   step = 0;
   glassSelect.value = recipe.glass;
   iceSelect.value = recipe.ice;
+  techniqueSelect.value = recipe.technique;
   for (const button of list.querySelectorAll('button')) {
     button.setAttribute('aria-current', String(button.dataset.id === recipe.id));
   }
@@ -144,13 +168,14 @@ async function loadViewer(): Promise<void> {
   } catch (error) {
     console.warn(error);
     text('fallback').hidden = false;
-    for (const control of [stepsToggle, prev, next, glassSelect, iceSelect]) control.disabled = true;
+    const controls = [stepsToggle, prev, next, glassSelect, iceSelect, techniqueSelect];
+    for (const control of controls) control.disabled = true;
   }
 }
 
 stepsToggle.addEventListener('change', () => {
-  step = stepsToggle.checked ? 0 : lastStep();
-  renderStep(false);
+  step = 0;
+  rebuild();
 });
 prev.addEventListener('click', () => {
   step = Math.max(step - 1, 0);
@@ -164,10 +189,16 @@ next.addEventListener('click', () => {
 renderList();
 fillSelect(glassSelect, GLASSES);
 fillSelect(iceSelect, ICES);
+fillSelect(techniqueSelect, TECHNIQUES);
 stepsToggle.checked = params.has('step');
 select(current);
 
-for (const [key, target] of [['glass', glassSelect], ['ice', iceSelect]] as const) {
+const overrides = [
+  ['glass', glassSelect],
+  ['ice', iceSelect],
+  ['technique', techniqueSelect],
+] as const;
+for (const [key, target] of overrides) {
   const value = params.get(key);
   if (value && [...target.options].some((option) => option.value === value)) target.value = value;
 }
