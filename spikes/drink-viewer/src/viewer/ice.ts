@@ -13,8 +13,14 @@ import {
 } from 'three';
 import type { Ice } from '../recipes';
 import type { GlassModel } from './glasses';
+import { fall } from './motion';
 import { clamp, radiusAt } from './profile';
 import type { Rng } from './random';
+
+export interface IceModel {
+  object: Object3D;
+  setDrop(k: number): void;
+}
 
 interface Placement {
   position: Vector3;
@@ -22,7 +28,20 @@ interface Placement {
   scale: Vector3;
 }
 
-function pile(geometry: BufferGeometry, faceted: boolean, placements: Placement[]): Object3D {
+interface Drop {
+  fromY: number;
+  hop: number;
+}
+
+const STAGGER = 0.55;
+const HIDDEN = new Vector3(0, 0, 0);
+
+function pile(
+  geometry: BufferGeometry,
+  faceted: boolean,
+  placements: Placement[],
+  drop: Drop,
+): IceModel {
   const material = new MeshStandardMaterial({
     color: 0xf2fbff,
     roughness: 0.1,
@@ -30,21 +49,33 @@ function pile(geometry: BufferGeometry, faceted: boolean, placements: Placement[
     opacity: 0.32,
     flatShading: faceted,
   });
-  const mesh = new InstancedMesh(geometry, material, placements.length);
+  const pieces = [...placements].sort((a, b) => a.position.y - b.position.y);
+  const mesh = new InstancedMesh(geometry, material, pieces.length);
+  mesh.renderOrder = 2;
+  // The pieces move far from their resting bounds while they drop.
+  mesh.frustumCulled = false;
   const matrix = new Matrix4();
   const quaternion = new Quaternion();
-  placements.forEach((p, i) => {
-    mesh.setMatrixAt(i, matrix.compose(p.position, quaternion.setFromEuler(p.rotation), p.scale));
-  });
-  mesh.instanceMatrix.needsUpdate = true;
-  mesh.renderOrder = 2;
-  return mesh;
+  const position = new Vector3();
+
+  const setDrop = (k: number): void => {
+    pieces.forEach((piece, i) => {
+      const local = clamp((k - (i / pieces.length) * STAGGER) / (1 - STAGGER), 0, 1);
+      position.copy(piece.position);
+      position.y += fall(local, drop.fromY - piece.position.y, drop.hop);
+      quaternion.setFromEuler(piece.rotation);
+      mesh.setMatrixAt(i, matrix.compose(position, quaternion, local > 0 ? piece.scale : HIDDEN));
+    });
+    mesh.instanceMatrix.needsUpdate = true;
+  };
+  setDrop(1);
+  return { object: mesh, setDrop };
 }
 
 const around = (radius: number, y: number, angle: number): Vector3 =>
   new Vector3(Math.sin(angle) * radius, y, Math.cos(angle) * radius);
 
-function cubes(glass: GlassModel, rng: Rng): Object3D {
+function cubes(glass: GlassModel, rng: Rng, fromY: number): IceModel {
   const { cavity, bottomY, fillY } = glass;
   const size = clamp(radiusAt(cavity, (bottomY + fillY) / 2) * 0.62, 1.1, 2.4);
   const placements: Placement[] = [];
@@ -64,19 +95,22 @@ function cubes(glass: GlassModel, rng: Rng): Object3D {
       });
     }
   }
-  return pile(new BoxGeometry(size, size, size), false, placements);
+  return pile(new BoxGeometry(size, size, size), false, placements, { fromY, hop: 0.3 });
 }
 
-function largeCube(glass: GlassModel): Object3D {
+function largeCube(glass: GlassModel, fromY: number): IceModel {
   const { cavity, bottomY, fillY } = glass;
   const size = Math.min(5, radiusAt(cavity, bottomY + 1) * 1.25);
   const y = Math.max(bottomY + size / 2 + 0.05, fillY - size * 0.38);
-  return pile(new BoxGeometry(size, size, size), false, [
-    { position: new Vector3(0, y, 0), rotation: new Euler(0, 0.5, 0), scale: new Vector3(1, 1, 1) },
-  ]);
+  const placement = {
+    position: new Vector3(0, y, 0),
+    rotation: new Euler(0, 0.5, 0),
+    scale: new Vector3(1, 1, 1),
+  };
+  return pile(new BoxGeometry(size, size, size), false, [placement], { fromY, hop: 0.4 });
 }
 
-function crushed(glass: GlassModel, rng: Rng): Object3D {
+function crushed(glass: GlassModel, rng: Rng, fromY: number): IceModel {
   const { cavity, bottomY, fillY, rimY } = glass;
   const floor = bottomY + 0.3;
   const top = Math.min(fillY + 0.7, rimY + 0.3);
@@ -93,12 +127,13 @@ function crushed(glass: GlassModel, rng: Rng): Object3D {
       scale: new Vector3(0.6 + rng() * 0.7, 0.6 + rng() * 0.7, 0.6 + rng() * 0.7),
     });
   }
-  return pile(new IcosahedronGeometry(0.5, 0), true, placements);
+  return pile(new IcosahedronGeometry(0.5, 0), true, placements, { fromY, hop: 0.12 });
 }
 
-export function buildIce(kind: Ice, glass: GlassModel, rng: Rng): Object3D {
-  if (kind === 'cubes') return cubes(glass, rng);
-  if (kind === 'large-cube') return largeCube(glass);
-  if (kind === 'crushed') return crushed(glass, rng);
-  return new Group();
+export function buildIce(kind: Ice, glass: GlassModel, rng: Rng): IceModel {
+  const fromY = glass.rimY + 2.5;
+  if (kind === 'cubes') return cubes(glass, rng, fromY);
+  if (kind === 'large-cube') return largeCube(glass, fromY);
+  if (kind === 'crushed') return crushed(glass, rng, fromY);
+  return { object: new Group(), setDrop: () => undefined };
 }

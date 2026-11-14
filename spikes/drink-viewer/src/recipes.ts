@@ -43,3 +43,14 @@ const files = import.meta.glob<Recipe>('../../../data/recipes/**/*.json', {
 export const recipes: readonly Recipe[] = Object.values(files).sort(
   (a, b) => a.family.localeCompare(b.family) || a.name.en.localeCompare(b.name.en),
 );
+
+const catalogue = import.meta.glob<{ id: string; name: Localized }[]>(
+  '../../../data/ingredients.json',
+  { eager: true, import: 'default' },
+);
+
+export const ingredientNames: ReadonlyMap<string, Localized> = new Map(
+  Object.values(catalogue)
+    .flat()
+    .map((ingredient) => [ingredient.id, ingredient.name]),
+);

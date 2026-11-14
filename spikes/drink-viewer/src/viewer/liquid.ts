@@ -8,7 +8,6 @@ import {
   Mesh,
   MeshStandardMaterial,
   Plane,
-  SphereGeometry,
   Vector2,
   Vector3,
 } from 'three';
@@ -25,13 +24,15 @@ export interface LiquidOptions {
   blend: number;
   cloudy: boolean;
   foam: string | undefined;
-  scoop: string | undefined;
 }
 
 export interface Liquid {
   object: Group;
   surfaceY: number;
+  colorAt(level: number): Color;
+  levelY(level: number): number;
   setLevel(level: number): void;
+  setFoam(amount: number): void;
 }
 
 const INSET = 0.04;
@@ -102,46 +103,44 @@ export function buildLiquid(glass: GlassModel, options: LiquidOptions): Liquid {
   cap.rotation.x = -Math.PI / 2;
   cap.renderOrder = 1;
 
-  const toppings = new Group();
+  const object = new Group();
+  object.add(body, cap);
+
   let surfaceY = fillY;
+  let foam: Mesh | null = null;
   if (options.foam) {
     surfaceY = Math.min(fillY + FOAM_DEPTH, glass.rimY - 0.05);
     const profile = [...between(cavity, fillY, surfaceY).map(inset), new Vector2(0, surfaceY)];
-    toppings.add(
-      new Mesh(
-        new LatheGeometry(profile, 64),
-        new MeshStandardMaterial({ color: options.foam, roughness: 0.95 }),
-      ),
+    foam = new Mesh(
+      new LatheGeometry(profile, 64),
+      new MeshStandardMaterial({ color: options.foam, roughness: 0.95 }),
     );
-  }
-  if (options.scoop) {
-    const radius = Math.min(radiusAt(cavity, fillY) * 0.8, 2.3);
-    const scoop = new Mesh(
-      new SphereGeometry(radius, 24, 16),
-      new MeshStandardMaterial({ color: options.scoop, roughness: 0.9 }),
-    );
-    scoop.position.y = fillY + radius * 0.35;
-    toppings.add(scoop);
+    object.add(foam);
   }
 
-  const object = new Group();
-  object.add(body, cap, toppings);
+  const levelY = (level: number): number => bottomY + depth * level;
 
   return {
     object,
     surfaceY,
+    colorAt,
+    levelY,
     setLevel(level) {
-      const y = bottomY + depth * level;
-      const full = level >= 1;
+      const y = levelY(level);
       const radius = Math.max(radiusAt(cavity, y) - INSET, 0.001);
       // The plane is in world space, so it is moved out of the way once the
       // glass is full and free to wobble.
-      clip.constant = full ? fillY + 1000 : y;
+      clip.constant = level >= 1 ? fillY + 1000 : y;
       body.visible = cap.visible = level > 0;
       cap.position.y = y;
       cap.scale.set(radius, radius, 1);
       capMaterial.color.copy(colorAt(level));
-      toppings.visible = full;
+    },
+    setFoam(amount) {
+      if (!foam) return;
+      foam.visible = amount > 0;
+      foam.scale.y = amount;
+      foam.position.y = fillY * (1 - amount);
     },
   };
 }
