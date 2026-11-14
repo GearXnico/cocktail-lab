@@ -1,0 +1,165 @@
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(#f6f3ee, #1b1917);
+  --panel: light-dark(#ffffff, #24211e);
+  --text: light-dark(#221d18, #ece6de);
+  --muted: light-dark(#6b6259, #a39a8f);
+  --line: light-dark(#ddd5ca, #3a3530);
+  --accent: light-dark(#a0401f, #f0a37e);
+  font-family: system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 17rem 1fr;
+  height: 100dvh;
+}
+
+.sidebar {
+  overflow-y: auto;
+  padding: 1rem;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin: 1rem 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.recipe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.recipe:hover {
+  background: var(--bg);
+}
+
+.recipe[aria-current='true'] {
+  background: var(--bg);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.swatch {
+  flex: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 1rem;
+}
+
+#facts,
+.stats {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.stage {
+  position: relative;
+  flex: 1;
+  min-height: 16rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: radial-gradient(ellipse at 50% 35%, #f1ece4 0%, #cdc4b6 70%, #b4aa9b 100%);
+}
+
+.stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 2rem;
+  color: #221d18;
+  text-align: center;
+}
+
+.fallback[hidden] {
+  display: none;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#step-label {
+  flex: 1;
+  min-width: 10rem;
+}
+
+.override {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+@media (max-width: 720px) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 11rem 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}

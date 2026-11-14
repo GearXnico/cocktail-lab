@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drink viewer spike · cocktail-lab</title>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>Drink viewer spike</h1>
+        <nav id="recipe-list" aria-label="Recipes"></nav>
+      </aside>
+      <main>
+        <header>
+          <h2 id="title"></h2>
+          <p id="facts"></p>
+        </header>
+        <div id="stage" class="stage">
+          <p id="fallback" class="fallback" hidden>
+            WebGL is not available in this browser, so the 3D model cannot be shown. The recipe
+            list still works.
+          </p>
+        </div>
+        <div class="toolbar">
+          <label><input type="checkbox" id="steps-toggle" /> Steps</label>
+          <button type="button" id="prev">Previous</button>
+          <span id="step-label" aria-live="polite"></span>
+          <button type="button" id="next">Next</button>
+          <label class="override">Glass <select id="glass"></select></label>
+          <label class="override">Ice <select id="ice"></select></label>
+        </div>
+        <p id="stats" class="stats"></p>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
