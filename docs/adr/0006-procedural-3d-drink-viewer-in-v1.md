@@ -5,7 +5,7 @@ Status: Accepted · Date: 2026-11-13
 ## Context
 
 The [v1 design](../design/v1.md) first left the 3D drink viewer for v2. The maintainer moved it into v1: each recipe
-shows an interactive model of the drink and a step-by-step mode that follows the recipe's ingredients.
+shows an interactive model of the drink and a step-by-step mode that follows the recipe's ingredients and the vessel its technique implies.
 Recipes already describe `glass`, `ice`, `technique` and a free-text `garnish`; there are 31 recipes and 10 glass types.
 The web has a budget of 200 KB gzip of initial JS, the project costs $0 and has no hosting for large assets,
 and recipe images must not raise copyright questions.
@@ -21,8 +21,8 @@ and recipe images must not raise copyright questions.
 We will build every drink model in code with three.js from the recipe data, because it costs nothing, adds no binary
 assets or licences, follows the data when a recipe changes, and stays small. three.js and the viewer load only on the
 recipe page, outside the initial JS budget, with their own budget of 300 KB gzip (the spike used 157 KB). Motion is scripted
-(ice drops, pours rise, a scoop lands on the bottom and floats up as the glass fills), without a physics library. The recipe schema gains optional `color`, `cloudy`, `foam`,
-`garnishKinds` and `taste`, and ingredients gain optional `description`, `color` and `scoop`; the spike on the `feat/drink-viewer-spike` branch set these lists.
+(ice drops, pours rise, a scoop lands on the bottom and floats up as the glass fills), without a physics library. The preparation vessel (shaker, mixing glass, blender) comes from `technique`, with no new field. The recipe schema gains optional `color`, `cloudy`, `foam`,
+`garnishKinds`, `iceAfter` and `taste`, and ingredients gain optional `description`, `color`, `form` and `unitMl`; the spike on the `feat/drink-viewer-spike` branch set these lists.
 
 ## Consequences
 
