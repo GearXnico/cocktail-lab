@@ -1,6 +1,6 @@
 # 0004. Store recipes as versioned JSON in the repo, validated with Zod in CI, following IBA specs
 
-Status: Accepted · Date: 2026-10-29
+Status: Accepted, sources amended by [ADR 0007](0007-recipe-sources-iba-then-diffords-guide.md) · Date: 2026-10-29
 
 ## Context
 
