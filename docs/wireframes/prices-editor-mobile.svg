@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="838" height="1082" viewBox="0 0 838 1082" font-family="Arial, Helvetica, sans-serif">
+<title>Prices editor, mobile</title>
+<rect width="838" height="1082" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Prices editor · mobile · list</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="375" height="1000" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<text x="16" y="94" font-size="24" font-weight="bold" fill="#222">Prices</text>
+<text x="359" y="94" font-size="14" text-anchor="end" text-decoration="underline" fill="#222">Defaults ›</text>
+<circle cx="260" cy="89" r="11" fill="#222"/>
+<text x="260" y="93.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+<rect x="16" y="110" width="343" height="38" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="26" y="134" font-size="14" fill="#888">Filter ingredients</text>
+<circle cx="339" cy="127" r="6" fill="none" stroke="#888"/>
+<line x1="343" y1="131" x2="348" y2="136" stroke="#888" stroke-width="1"/>
+<rect x="16" y="158" width="260.88" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="16" y="158" width="75.76" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="53.88" y="177.32" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">All (60)</text>
+<line x1="91.76" y1="158" x2="91.76" y2="188" stroke="#999" stroke-width="1"/>
+<text x="139.72" y="177.32" font-size="12" text-anchor="middle" fill="#222">Priced (19)</text>
+<line x1="187.68" y1="158" x2="187.68" y2="188" stroke="#999" stroke-width="1"/>
+<text x="232.28" y="177.32" font-size="12" text-anchor="middle" fill="#222">Not priced</text>
+<rect x="16" y="202" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="225" font-size="14" font-weight="bold" fill="#222">Angostura bitters</text>
+<text x="28" y="246" font-size="12" font-weight="bold" fill="#222">Not priced</text>
+<text x="347" y="236" font-size="14" font-weight="bold" text-anchor="end" fill="#222">+ Add</text>
+<rect x="16" y="268" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="291" font-size="14" font-weight="bold" fill="#222">Aperol</text>
+<text x="28" y="312" font-size="12" fill="#222">$10.990 / 750 ml · $14,65 / ml</text>
+<text x="347" y="302" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="334" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="357" font-size="14" font-weight="bold" fill="#222">Bourbon</text>
+<text x="28" y="378" font-size="12" fill="#222">$17.990 / 750 ml · $23,99 / ml</text>
+<text x="347" y="368" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="400" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="423" font-size="14" font-weight="bold" fill="#222">Campari</text>
+<text x="28" y="444" font-size="12" fill="#222">$12.990 / 750 ml · $17,32 / ml</text>
+<text x="347" y="434" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="466" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="489" font-size="14" font-weight="bold" fill="#222">Chilean pisco</text>
+<text x="28" y="510" font-size="12" fill="#222">$7.490 / 750 ml · $9,99 / ml</text>
+<text x="347" y="500" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="532" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="555" font-size="14" font-weight="bold" fill="#222">Egg white</text>
+<text x="28" y="576" font-size="12" font-weight="bold" fill="#222">Not priced</text>
+<text x="347" y="566" font-size="14" font-weight="bold" text-anchor="end" fill="#222">+ Add</text>
+<circle cx="330" cy="544" r="11" fill="#222"/>
+<text x="330" y="548.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+<rect x="16" y="598" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="621" font-size="14" font-weight="bold" fill="#222">Gin</text>
+<text x="28" y="642" font-size="12" fill="#222">$15.990 / 750 ml · $21,32 / ml</text>
+<text x="347" y="632" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="664" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="687" font-size="14" font-weight="bold" fill="#222">Lemon juice</text>
+<text x="28" y="708" font-size="12" fill="#222">$3.990 / 1000 ml · $3,99 / ml</text>
+<text x="347" y="698" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="730" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="753" font-size="14" font-weight="bold" fill="#222">Lime juice</text>
+<text x="28" y="774" font-size="12" fill="#222">$4.990 / 1000 ml · $4,99 / ml</text>
+<text x="347" y="764" font-size="14" text-anchor="end" fill="#222">›</text>
+<rect x="16" y="796" width="343" height="58" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="819" font-size="14" font-weight="bold" fill="#222">Water</text>
+<text x="28" y="840" font-size="12" font-weight="bold" fill="#222">$0 / 1000 ml · $0 / ml</text>
+<text x="347" y="830" font-size="14" text-anchor="end" fill="#222">Free ›</text>
+<circle cx="300" cy="808" r="11" fill="#222"/>
+<text x="300" y="812.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">4</text>
+<rect x="16" y="870" width="343" height="50" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="28" y="878" width="120.08000000000001" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="88.04" y="900.04" font-size="14" text-anchor="middle" fill="#222">Import file…</text>
+<rect x="227" y="878" width="120" height="34" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="287" y="900.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Export file</text>
+<circle cx="16" cy="870" r="11" fill="#222"/>
+<text x="16" y="874.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<rect x="0" y="940" width="375" height="60" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="940" x2="375" y2="940" stroke="#cccccc" stroke-width="1"/>
+<rect x="36.875" y="950" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="46.875" y="988" font-size="12" text-anchor="middle" fill="#222">Recipes</text>
+<rect x="130.625" y="950" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="140.625" y="988" font-size="12" text-anchor="middle" fill="#222">My bar</text>
+<rect x="224.375" y="950" width="20" height="20" rx="4" fill="#555" stroke="#999" stroke-width="1"/>
+<text x="234.375" y="988" font-size="12" font-weight="bold" text-anchor="middle" fill="#222">Prices</text>
+<rect x="318.125" y="950" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="328.125" y="988" font-size="12" text-anchor="middle" fill="#222">Menus</text>
+</g>
+<text x="439" y="38" font-size="15" font-weight="bold" fill="#222">Edit one price (sheet) · Defaults page</text>
+<g transform="translate(439 58)">
+<rect x="0" y="0" width="375" height="1000" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<text x="16" y="84" font-size="14" text-decoration="underline" fill="#222">‹ Prices</text>
+<text x="16" y="120" font-size="22" font-weight="bold" fill="#222">Defaults</text>
+<rect x="16" y="136" width="343" height="470" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="32" y="164" font-size="16" font-weight="bold" fill="#222">Defaults</text>
+<text x="32" y="196" font-size="12" fill="#888">Currency</text>
+<rect x="32" y="204" width="148" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="42" y="226" font-size="14" fill="#222">CLP</text>
+<text x="162" y="226" font-size="14" fill="#888">▾</text>
+<text x="196" y="196" font-size="12" fill="#888">Units</text>
+<rect x="196" y="204" width="73.12" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="196" y="204" width="36.56" height="34" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="214.28" y="225.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">oz</text>
+<line x1="232.56" y1="204" x2="232.56" y2="238" stroke="#999" stroke-width="1"/>
+<text x="250.84" y="225.68" font-size="13" text-anchor="middle" fill="#222">ml</text>
+<text x="32" y="272" font-size="12" fill="#888">Waste</text>
+<rect x="32" y="280" width="148" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="42" y="302" font-size="14" fill="#222">10 %</text>
+<text x="196" y="272" font-size="12" fill="#888">Target cost</text>
+<rect x="196" y="280" width="148" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="206" y="302" font-size="14" fill="#222">25 %</text>
+<text x="32" y="348" font-size="12" fill="#888">Tax</text>
+<rect x="32" y="356" width="148" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="42" y="378" font-size="14" fill="#222">19 %</text>
+<text x="196" y="348" font-size="12" fill="#888">Rounding step</text>
+<rect x="196" y="356" width="148" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="206" y="378" font-size="14" fill="#222">100</text>
+<text x="32" y="424" font-size="12" fill="#888">Extras per drink</text>
+<rect x="32" y="432" width="148" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="42" y="454" font-size="14" fill="#222">$150</text>
+<rect x="32" y="488" width="16" height="16" rx="2" fill="#555" stroke="#555" stroke-width="1"/>
+<path d="M36 496 l3 3 l6 -7" fill="none" stroke="#fff" stroke-width="2"/>
+<text x="56" y="501" font-size="14" fill="#444">Tax included in menu price</text>
+<text x="32" y="532" font-size="12" fill="#888">Language: from the header (ES | EN)</text>
+<text x="32" y="552" font-size="12" fill="#888">Defaults apply to every drink and menu.</text>
+<rect x="0" y="640" width="375" height="360" rx="14" fill="#ffffff" stroke="#777" stroke-width="1"/>
+<text x="16" y="676" font-size="18" font-weight="bold" fill="#222">Lime juice</text>
+<text x="359" y="676" font-size="16" text-anchor="end" fill="#444">✕</text>
+<text x="16" y="706" font-size="12" fill="#888">Price (CLP)</text>
+<rect x="16" y="714" width="160" height="36" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="26" y="737" font-size="14" fill="#222">4.990</text>
+<text x="192" y="706" font-size="12" fill="#888">Size (ml)</text>
+<rect x="192" y="714" width="167" height="36" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="202" y="737" font-size="14" fill="#222">1000</text>
+<text x="16" y="778" font-size="14" fill="#222">Unit cost: $4,99 / ml</text>
+<text x="16" y="800" font-size="13" fill="#888">Used in 11 recipes</text>
+<rect x="16" y="820" width="120.08000000000001" height="40" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="76.04" y="845.04" font-size="14" text-anchor="middle" fill="#222">Remove price</text>
+<rect x="239" y="820" width="120" height="40" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="299" y="845.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Save</text>
+</g>
+</svg>

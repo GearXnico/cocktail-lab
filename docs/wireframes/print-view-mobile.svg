@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="423" height="842" viewBox="0 0 423 842" font-family="Arial, Helvetica, sans-serif">
+<title>Print view, mobile</title>
+<rect width="423" height="842" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Print view · mobile (375 px)</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="375" height="760" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="104" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="104" x2="375" y2="104" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="30" font-size="14" text-decoration="underline" fill="#222">‹ Menu</text>
+<rect x="279" y="10" width="80" height="32" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="319" y="31.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Print</text>
+<rect x="16" y="56" width="233.28000000000003" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="16" y="56" width="116.64000000000001" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="74.32000000000001" y="75.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">Customer view</text>
+<line x1="132.64000000000001" y1="56" x2="132.64000000000001" y2="86" stroke="#999" stroke-width="1"/>
+<text x="190.96000000000004" y="75.68" font-size="13" text-anchor="middle" fill="#222">Internal view</text>
+<circle cx="270" cy="70" r="11" fill="#222"/>
+<text x="270" y="74.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<text x="16" y="132" font-size="13" font-weight="bold" fill="#222">1 drink has no price (Old Fashioned): it prints</text>
+<text x="16" y="150.85" font-size="13" font-weight="bold" fill="#222">without one.</text>
+<circle cx="355" cy="124" r="11" fill="#222"/>
+<text x="355" y="128.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+<rect x="30" y="170" width="315" height="446" rx="0" fill="#ffffff" stroke="#777" stroke-width="1"/>
+<text x="187.5" y="212.35294117647058" font-size="15.882352941176471" font-weight="bold" text-anchor="middle" fill="#222">Summer terrace</text>
+<text x="55.411764705882355" y="236.70588235294116" font-size="9" font-weight="bold" fill="#222">Negroni</text>
+<text x="319.5882352941176" y="236.70588235294116" font-size="9" font-weight="bold" text-anchor="end" fill="#222">$8.200</text>
+<line x1="98.69176470588235" y1="234.58823529411762" x2="281.3482352941176" y2="234.58823529411762" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="55.411764705882355" y="248.35294117647058" font-size="6.882352941176471" font-style="italic" fill="#888">Garnish: Half orange slice</text>
+<text x="55.411764705882355" y="270.5882352941176" font-size="9" font-weight="bold" fill="#222">Pisco Sour (Chilean recipe)</text>
+<text x="319.5882352941176" y="270.5882352941176" font-size="9" font-weight="bold" text-anchor="end" fill="#222">$6.500</text>
+<line x1="199.49176470588236" y1="268.4705882352941" x2="281.3482352941176" y2="268.4705882352941" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="55.411764705882355" y="282.235294117647" font-size="6.882352941176471" font-style="italic" fill="#888">No garnish</text>
+<text x="55.411764705882355" y="304.4705882352941" font-size="9" font-weight="bold" fill="#222">Mojito</text>
+<text x="319.5882352941176" y="304.4705882352941" font-size="9" font-weight="bold" text-anchor="end" fill="#222">$6.000</text>
+<line x1="93.65176470588236" y1="302.35294117647055" x2="281.3482352941176" y2="302.35294117647055" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="55.411764705882355" y="316.1176470588235" font-size="6.882352941176471" font-style="italic" fill="#888">Garnish: Mint sprigs and lime slice</text>
+<text x="55.411764705882355" y="338.35294117647055" font-size="9" font-weight="bold" fill="#222">Aperol Spritz</text>
+<text x="319.5882352941176" y="338.35294117647055" font-size="9" font-weight="bold" text-anchor="end" fill="#222">$9.800</text>
+<line x1="128.93176470588236" y1="336.235294117647" x2="281.3482352941176" y2="336.235294117647" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="55.411764705882355" y="349.99999999999994" font-size="6.882352941176471" font-style="italic" fill="#888">Garnish: Orange slice</text>
+<text x="55.411764705882355" y="372.235294117647" font-size="9" font-weight="bold" fill="#222">Paloma</text>
+<text x="319.5882352941176" y="372.235294117647" font-size="9" font-weight="bold" text-anchor="end" fill="#222">$7.500</text>
+<line x1="93.65176470588236" y1="370.1176470588235" x2="281.3482352941176" y2="370.1176470588235" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="55.411764705882355" y="383.8823529411764" font-size="6.882352941176471" font-style="italic" fill="#888">Garnish: Lime slice</text>
+<text x="55.411764705882355" y="406.1176470588235" font-size="9" font-weight="bold" fill="#222">Old Fashioned</text>
+<text x="319.5882352941176" y="406.1176470588235" font-size="9" font-weight="bold" text-anchor="end" fill="#222"></text>
+<line x1="128.93176470588236" y1="403.99999999999994" x2="319.5882352941176" y2="403.99999999999994" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="55.411764705882355" y="417.76470588235287" font-size="6.882352941176471" font-style="italic" fill="#888">Garnish: Orange slice or zest, and a cocktail cherry</text>
+<text x="187.5" y="594.8235294117648" font-size="6.352941176470589" text-anchor="middle" fill="#888">Prices include 19 % tax</text>
+<text x="187" y="640" font-size="12" text-anchor="middle" fill="#888">Preview scaled to the screen width;</text>
+<text x="187" y="658" font-size="12" text-anchor="middle" fill="#888">the printed page is A4 or Letter.</text>
+</g>
+</svg>

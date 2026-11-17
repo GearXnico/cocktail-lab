@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="838" height="1562" viewBox="0 0 838 1562" font-family="Arial, Helvetica, sans-serif">
+<title>Recipe detail and step mode, mobile</title>
+<rect width="838" height="1562" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Recipe detail · mobile · Whiskey Sour</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="375" height="1480" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<text x="16" y="84" font-size="14" text-decoration="underline" fill="#222">‹ Recipes</text>
+<rect x="16" y="98" width="343" height="300" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="16" y1="98" x2="359" y2="398" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="359" y1="98" x2="16" y2="398" stroke="#c8c8c8" stroke-width="1"/>
+<rect x="102.49999999999999" y="228" width="170.00000000000003" height="40" rx="2" fill="#ffffff" stroke="#dddddd" stroke-width="1"/>
+<text x="187.5" y="245" font-size="13" text-anchor="middle" fill="#444">3D viewer</text>
+<text x="187.5" y="261" font-size="11" text-anchor="middle" fill="#888">Whiskey Sour, rocks glass</text>
+<circle cx="28" cy="110" r="11" fill="#222"/>
+<text x="28" y="114.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<rect x="16" y="408" width="38" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="35" y="428.68" font-size="13" text-anchor="middle" fill="#222">⟲</text>
+<rect x="60" y="408" width="38" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="79" y="428.68" font-size="13" text-anchor="middle" fill="#222">⟳</text>
+<rect x="104" y="408" width="38" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="123" y="428.68" font-size="13" text-anchor="middle" fill="#222">−</text>
+<rect x="148" y="408" width="38" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="167" y="428.68" font-size="13" text-anchor="middle" fill="#222">+</text>
+<rect x="229" y="408" width="130" height="32" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="294" y="428.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">Step by step ▶</text>
+<g transform="translate(16 440)">
+<text x="0" y="36" font-size="26" font-weight="bold" fill="#222">Whiskey Sour</text>
+<rect x="0" y="50" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="27.8" y="67.32" font-size="12" text-anchor="middle" fill="#222">Sours</text>
+<rect x="63.6" y="50" width="62.32000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="94.76" y="67.32" font-size="12" text-anchor="middle" fill="#222">Whisky</text>
+<rect x="133.92000000000002" y="50" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="161.72000000000003" y="67.32" font-size="12" text-anchor="middle" fill="#222">Shake</text>
+<rect x="197.52" y="50" width="95.92" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="245.48000000000002" y="67.32" font-size="12" text-anchor="middle" fill="#222">Rocks glass</text>
+<rect x="0" y="84" width="89.2" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="44.6" y="101.32" font-size="12" text-anchor="middle" fill="#222">Ice: cubes</text>
+<rect x="97.2" y="84" width="116.08000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="155.24" y="101.32" font-size="12" text-anchor="middle" fill="#222">Difficulty 1/3</text>
+<text x="0" y="146" font-size="18" font-weight="bold" fill="#222">Ingredients</text>
+<rect x="251" y="124" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="251" y="124" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="269.28" y="143.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">oz</text>
+<line x1="287.56" y1="124" x2="287.56" y2="154" stroke="#999" stroke-width="1"/>
+<text x="305.84000000000003" y="143.68" font-size="13" text-anchor="middle" fill="#222">ml</text>
+<text x="0" y="176" font-size="15" font-weight="bold" fill="#222">1½ oz</text>
+<text x="70" y="176" font-size="15" text-decoration="underline" fill="#222">Bourbon</text>
+<text x="0" y="206" font-size="15" font-weight="bold" fill="#222">¾ oz</text>
+<text x="70" y="206" font-size="15" text-decoration="underline" fill="#222">Lemon juice</text>
+<text x="0" y="236" font-size="15" font-weight="bold" fill="#222">¾ oz</text>
+<text x="70" y="236" font-size="15" text-decoration="underline" fill="#222">Simple syrup</text>
+<text x="0" y="270" font-size="14" font-weight="bold" fill="#222">Garnish</text>
+<text x="70" y="270" font-size="14" fill="#444">Half orange slice and maraschino</text>
+<text x="70" y="290.3" font-size="14" fill="#444">cherry</text>
+<text x="0" y="340.6" font-size="18" font-weight="bold" fill="#222">Method</text>
+<text x="0" y="366.6" font-size="14" font-weight="bold" fill="#444">1.</text>
+<text x="22" y="366.6" font-size="14" fill="#444">Pour all ingredients into a cocktail shaker</text>
+<text x="22" y="386.90000000000003" font-size="14" fill="#444">filled with ice. Shake well.</text>
+<text x="0" y="413.20000000000005" font-size="14" font-weight="bold" fill="#444">2.</text>
+<text x="22" y="413.20000000000005" font-size="14" fill="#444">Strain into an old fashioned glass filled</text>
+<text x="22" y="433.50000000000006" font-size="14" fill="#444">with ice (the IBA spec uses a cobbler</text>
+<text x="22" y="453.80000000000007" font-size="14" fill="#444">glass, or this "on the rocks" serve).</text>
+<g transform="translate(0 480.1)">
+<rect x="0" y="0" width="343" height="260" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="16" y="28" font-size="16" font-weight="bold" fill="#222">Cost with your prices</text>
+<text x="327" y="28" font-size="13" text-anchor="end" text-decoration="underline" fill="#222">Edit prices</text>
+<text x="16" y="62" font-size="13" fill="#444">45 ml  Bourbon</text>
+<text x="327" y="62" font-size="13" text-anchor="end" fill="#444">$1.079</text>
+<text x="16" y="86" font-size="13" fill="#444">25 ml  Lemon juice</text>
+<text x="327" y="86" font-size="13" text-anchor="end" fill="#444">$100</text>
+<text x="16" y="110" font-size="13" fill="#444">20 ml  Simple syrup</text>
+<text x="327" y="110" font-size="13" text-anchor="end" fill="#444">$50</text>
+<line x1="16" y1="124" x2="327" y2="124" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="148" font-size="14" fill="#444">Waste 10 % · Extras per drink</text>
+<text x="327" y="148" font-size="14" text-anchor="end" fill="#222">$150</text>
+<text x="16" y="172" font-size="14" font-weight="bold" fill="#444">Drink cost</text>
+<text x="327" y="172" font-size="14" font-weight="bold" text-anchor="end" fill="#222">$1.502</text>
+<text x="16" y="196" font-size="14" font-weight="bold" fill="#444">Suggested price</text>
+<text x="327" y="196" font-size="14" font-weight="bold" text-anchor="end" fill="#222">$7.200</text>
+<text x="16" y="220" font-size="14" fill="#444">Cost % · Margin</text>
+<text x="327" y="220" font-size="14" text-anchor="end" fill="#222">24.8 % · $4.549</text>
+<text x="16" y="244" font-size="11" fill="#888">Target cost 25 % · tax 19 % included · rounded up to 100</text>
+</g>
+<rect x="0" y="754.1" width="343" height="34" rx="4" fill="#dddddd" stroke="#999" stroke-width="1"/>
+<text x="171.5" y="776.14" font-size="14" text-anchor="middle" fill="#222">Add to menu ▾</text>
+<text x="0" y="826.1" font-size="18" font-weight="bold" fill="#222">History</text>
+<text x="0" y="852.1" font-size="14" fill="#444">Whiskey sours are documented in the United</text>
+<text x="0" y="872.4" font-size="14" fill="#444">States from the 19th century; the earliest</text>
+<text x="0" y="892.7" font-size="14" fill="#444">known printed recipe appears in an 1862 book</text>
+<text x="0" y="913" font-size="14" fill="#444">by Jerry Thomas.</text>
+</g>
+<rect x="0" y="1420" width="375" height="60" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="1420" x2="375" y2="1420" stroke="#cccccc" stroke-width="1"/>
+<rect x="36.875" y="1430" width="20" height="20" rx="4" fill="#555" stroke="#999" stroke-width="1"/>
+<text x="46.875" y="1468" font-size="12" font-weight="bold" text-anchor="middle" fill="#222">Recipes</text>
+<rect x="130.625" y="1430" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="140.625" y="1468" font-size="12" text-anchor="middle" fill="#222">My bar</text>
+<rect x="224.375" y="1430" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="234.375" y="1468" font-size="12" text-anchor="middle" fill="#222">Prices</text>
+<rect x="318.125" y="1430" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="328.125" y="1468" font-size="12" text-anchor="middle" fill="#222">Menus</text>
+</g>
+<text x="439" y="38" font-size="15" font-weight="bold" fill="#222">Step mode · mobile · step 3 of 8</text>
+<g transform="translate(439 58)">
+<rect x="0" y="0" width="375" height="1060" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="15" font-weight="bold" fill="#222">✕  Exit</text>
+<text x="359" y="35" font-size="14" text-anchor="end" fill="#222">Whiskey Sour · 3/8</text>
+<rect x="0" y="57" width="375" height="380" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="0" y1="57" x2="375" y2="437" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="375" y1="57" x2="0" y2="437" stroke="#c8c8c8" stroke-width="1"/>
+<rect x="106.69999999999999" y="227" width="161.60000000000002" height="40" rx="2" fill="#ffffff" stroke="#dddddd" stroke-width="1"/>
+<text x="187.5" y="244" font-size="13" text-anchor="middle" fill="#444">3D viewer, step mode</text>
+<text x="187.5" y="260" font-size="11" text-anchor="middle" fill="#888">shaker + rocks glass</text>
+<circle cx="14" cy="70" r="11" fill="#222"/>
+<text x="14" y="74.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<rect x="18" y="452" width="38.875" height="8" rx="2" fill="#555" stroke="none" stroke-width="1"/>
+<rect x="60.875" y="452" width="38.875" height="8" rx="2" fill="#555" stroke="none" stroke-width="1"/>
+<rect x="103.75" y="452" width="38.875" height="8" rx="2" fill="#555" stroke="none" stroke-width="1"/>
+<rect x="146.625" y="452" width="38.875" height="8" rx="2" fill="#dddddd" stroke="none" stroke-width="1"/>
+<rect x="189.5" y="452" width="38.875" height="8" rx="2" fill="#dddddd" stroke="none" stroke-width="1"/>
+<rect x="232.375" y="452" width="38.875" height="8" rx="2" fill="#dddddd" stroke="none" stroke-width="1"/>
+<rect x="275.25" y="452" width="38.875" height="8" rx="2" fill="#dddddd" stroke="none" stroke-width="1"/>
+<rect x="318.125" y="452" width="38.875" height="8" rx="2" fill="#dddddd" stroke="none" stroke-width="1"/>
+<text x="16" y="488" font-size="13" fill="#888">Step 3 of 8</text>
+<text x="16" y="512" font-size="18" font-weight="bold" fill="#222">Pour ¾ oz Lemon juice into the</text>
+<text x="16" y="538.1" font-size="18" font-weight="bold" fill="#222">shaker</text>
+<rect x="16" y="550" width="100" height="44" rx="4" fill="#dddddd" stroke="#999" stroke-width="1"/>
+<text x="66" y="577.04" font-size="14" text-anchor="middle" fill="#222">◀</text>
+<rect x="137" y="550" width="101" height="44" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="187.5" y="577.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">❚❚ Pause</text>
+<rect x="259" y="550" width="100" height="44" rx="4" fill="#dddddd" stroke="#999" stroke-width="1"/>
+<text x="309" y="577.04" font-size="14" text-anchor="middle" fill="#222">▶</text>
+<text x="16" y="626" font-size="15" font-weight="bold" fill="#222">All steps ▾</text>
+<circle cx="110" cy="621" r="11" fill="#222"/>
+<text x="110" y="625.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+<rect x="16" y="640" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="662" font-size="13" font-weight="bold" fill="#222">✓</text>
+<text x="54" y="662" font-size="12" fill="#222">Rocks glass ready</text>
+<rect x="16" y="680" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="702" font-size="13" font-weight="bold" fill="#222">✓</text>
+<text x="54" y="702" font-size="12" fill="#222">Pour 1½ oz Bourbon into the shaker</text>
+<rect x="16" y="720" width="343" height="34" rx="4" fill="#dddddd" stroke="#222" stroke-width="2"/>
+<text x="30" y="742" font-size="13" font-weight="bold" fill="#222">3</text>
+<text x="54" y="742" font-size="12" font-weight="bold" fill="#222">Pour ¾ oz Lemon juice into the shaker</text>
+<rect x="16" y="760" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="782" font-size="13" font-weight="bold" fill="#222">4</text>
+<text x="54" y="782" font-size="12" fill="#222">Pour ¾ oz Simple syrup into the shaker</text>
+<rect x="16" y="800" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="822" font-size="13" font-weight="bold" fill="#222">5</text>
+<text x="54" y="822" font-size="12" fill="#222">Add ice to the shaker</text>
+<rect x="16" y="840" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="862" font-size="13" font-weight="bold" fill="#222">6</text>
+<text x="54" y="862" font-size="12" fill="#222">Shake</text>
+<rect x="16" y="880" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="902" font-size="13" font-weight="bold" fill="#222">7</text>
+<text x="54" y="902" font-size="12" fill="#222">Strain into the rocks glass over ice cubes</text>
+<rect x="16" y="920" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="30" y="942" font-size="13" font-weight="bold" fill="#222">8</text>
+<text x="54" y="942" font-size="12" fill="#222">Garnish: Half orange slice and maraschino cherry</text>
+</g>
+</svg>

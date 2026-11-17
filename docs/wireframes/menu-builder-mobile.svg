@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="423" height="1242" viewBox="0 0 423 1242" font-family="Arial, Helvetica, sans-serif">
+<title>Menu builder, mobile</title>
+<rect width="423" height="1242" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Menu builder · mobile (375 px)</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="375" height="1160" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<rect x="16" y="72" width="343" height="40" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="26" y="97" font-size="14" fill="#222">Menu: Summer terrace</text>
+<text x="341" y="97" font-size="14" fill="#888">▾</text>
+<circle cx="347" cy="72" r="11" fill="#222"/>
+<text x="347" y="76.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<rect x="16" y="122" width="343" height="38" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="26" y="146" font-size="14" fill="#888">Add a recipe…</text>
+<circle cx="339" cy="139" r="6" fill="none" stroke="#888"/>
+<line x1="343" y1="143" x2="348" y2="148" stroke="#888" stroke-width="1"/>
+<circle cx="347" cy="122" r="11" fill="#222"/>
+<text x="347" y="126.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+<rect x="16" y="174" width="343" height="126" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="198" font-size="15" font-weight="bold" fill="#222">Negroni</text>
+<text x="347" y="198" font-size="14" text-anchor="end" fill="#888">✕</text>
+<text x="28" y="224" font-size="11" fill="#888">Cost</text>
+<text x="28" y="240" font-size="14" font-weight="bold" fill="#222">$1.722</text>
+<text x="118" y="224" font-size="11" fill="#888">Cost %</text>
+<text x="118" y="240" font-size="14" font-weight="bold" fill="#222">25.0 %</text>
+<text x="28" y="264" font-size="11" fill="#888">Margin</text>
+<text x="28" y="280" font-size="14" font-weight="bold" fill="#222">$5.169</text>
+<text x="118" y="264" font-size="11" fill="#888">Suggested</text>
+<text x="118" y="280" font-size="14" font-weight="bold" fill="#222">$8.200</text>
+<text x="220" y="224" font-size="11" fill="#888">Menu price</text>
+<rect x="220" y="230" width="127" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="230" y="251" font-size="14" fill="#222">$8.200</text>
+<rect x="16" y="310" width="343" height="126" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="334" font-size="15" font-weight="bold" fill="#222">Pisco Sour (Chilean recipe)</text>
+<text x="347" y="334" font-size="14" text-anchor="end" fill="#888">✕</text>
+<text x="28" y="360" font-size="11" fill="#888">Cost</text>
+<text x="28" y="376" font-size="14" font-weight="bold" fill="#222">$1.353</text>
+<text x="118" y="360" font-size="11" fill="#888">Cost %</text>
+<text x="118" y="376" font-size="14" font-weight="bold" fill="#222">24.8 %</text>
+<text x="28" y="400" font-size="11" fill="#888">Margin</text>
+<text x="28" y="416" font-size="14" font-weight="bold" fill="#222">$4.110</text>
+<text x="118" y="400" font-size="11" fill="#888">Suggested</text>
+<text x="118" y="416" font-size="14" font-weight="bold" fill="#222">$6.500</text>
+<text x="220" y="360" font-size="11" fill="#888">Menu price</text>
+<rect x="220" y="366" width="127" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="230" y="387" font-size="14" fill="#222">$6.500</text>
+<rect x="16" y="446" width="343" height="126" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="470" font-size="15" font-weight="bold" fill="#222">Mojito</text>
+<text x="347" y="470" font-size="14" text-anchor="end" fill="#888">✕</text>
+<text x="28" y="496" font-size="11" fill="#888">Cost</text>
+<text x="28" y="512" font-size="14" font-weight="bold" fill="#222">$1.257</text>
+<text x="118" y="496" font-size="11" fill="#888">Cost %</text>
+<text x="118" y="512" font-size="14" font-weight="bold" fill="#222">24.9 %</text>
+<text x="28" y="536" font-size="11" fill="#888">Margin</text>
+<text x="28" y="552" font-size="14" font-weight="bold" fill="#222">$3.785</text>
+<text x="118" y="536" font-size="11" fill="#888">Suggested</text>
+<text x="118" y="552" font-size="14" font-weight="bold" fill="#222">$6.000</text>
+<text x="220" y="496" font-size="11" fill="#888">Menu price</text>
+<rect x="220" y="502" width="127" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="230" y="523" font-size="14" fill="#222">$6.000</text>
+<rect x="16" y="582" width="343" height="126" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="606" font-size="15" font-weight="bold" fill="#222">Aperol Spritz</text>
+<text x="347" y="606" font-size="14" text-anchor="end" fill="#888">✕</text>
+<text x="28" y="632" font-size="11" fill="#888">Cost</text>
+<text x="28" y="648" font-size="14" font-weight="bold" fill="#222">$2.049</text>
+<text x="118" y="632" font-size="11" fill="#888">Cost %</text>
+<text x="118" y="648" font-size="14" font-weight="bold" fill="#222">24.9 %</text>
+<text x="28" y="672" font-size="11" fill="#888">Margin</text>
+<text x="28" y="688" font-size="14" font-weight="bold" fill="#222">$6.186</text>
+<text x="118" y="672" font-size="11" fill="#888">Suggested</text>
+<text x="118" y="688" font-size="14" font-weight="bold" fill="#222">$9.800</text>
+<text x="220" y="632" font-size="11" fill="#888">Menu price</text>
+<rect x="220" y="638" width="127" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="230" y="659" font-size="14" fill="#222">$9.800</text>
+<rect x="16" y="718" width="343" height="126" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="742" font-size="15" font-weight="bold" fill="#222">Paloma</text>
+<text x="347" y="742" font-size="14" text-anchor="end" fill="#888">✕</text>
+<text x="28" y="768" font-size="11" fill="#888">Cost</text>
+<text x="28" y="784" font-size="14" font-weight="bold" fill="#222">$1.775</text>
+<text x="118" y="768" font-size="11" fill="#888">Cost %</text>
+<text x="118" y="784" font-size="14" font-weight="bold" fill="#222">28.2 %</text>
+<text x="28" y="808" font-size="11" fill="#888">Margin</text>
+<text x="28" y="824" font-size="14" font-weight="bold" fill="#222">$4.528</text>
+<text x="118" y="808" font-size="11" fill="#888">Suggested</text>
+<text x="118" y="824" font-size="14" font-weight="bold" fill="#222">$8.500</text>
+<text x="220" y="768" font-size="11" fill="#888">Menu price</text>
+<rect x="220" y="774" width="127" height="32" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="230" y="795" font-size="14" fill="#222">$7.500</text>
+<text x="220" y="826" font-size="11" text-decoration="underline" fill="#222">Custom · reset</text>
+<circle cx="347" cy="814" r="11" fill="#222"/>
+<text x="347" y="818.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+<rect x="16" y="854" width="343" height="126" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="28" y="878" font-size="15" font-weight="bold" fill="#222">Old Fashioned</text>
+<text x="347" y="878" font-size="14" text-anchor="end" fill="#888">✕</text>
+<text x="28" y="904" font-size="13" font-weight="bold" fill="#222">Incomplete: no price for Sugar cube, Angostura</text>
+<text x="28" y="922.85" font-size="13" font-weight="bold" fill="#222">bitters</text>
+<text x="28" y="962" font-size="13" text-decoration="underline" fill="#222">Add prices ›</text>
+<circle cx="347" cy="962" r="11" fill="#222"/>
+<text x="347" y="966.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">4</text>
+<text x="16" y="1006" font-size="13" font-weight="bold" fill="#222">6 drinks · avg cost % 25.5 % · 1 incomplete</text>
+<rect x="0" y="1030" width="375" height="70" rx="0" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<line x1="0" y1="1030" x2="375" y2="1030" stroke="#cccccc" stroke-width="1"/>
+<rect x="16" y="1042" width="110" height="44" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="71" y="1069.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Print…</text>
+<rect x="136" y="1042" width="110" height="44" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="191" y="1069.04" font-size="14" text-anchor="middle" fill="#222">Export ▾</text>
+<rect x="256" y="1042" width="103" height="44" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="307.5" y="1069.04" font-size="14" text-anchor="middle" fill="#222">⋯</text>
+<rect x="0" y="1100" width="375" height="60" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="1100" x2="375" y2="1100" stroke="#cccccc" stroke-width="1"/>
+<rect x="36.875" y="1110" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="46.875" y="1148" font-size="12" text-anchor="middle" fill="#222">Recipes</text>
+<rect x="130.625" y="1110" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="140.625" y="1148" font-size="12" text-anchor="middle" fill="#222">My bar</text>
+<rect x="224.375" y="1110" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="234.375" y="1148" font-size="12" text-anchor="middle" fill="#222">Prices</text>
+<rect x="318.125" y="1110" width="20" height="20" rx="4" fill="#555" stroke="#999" stroke-width="1"/>
+<text x="328.125" y="1148" font-size="12" font-weight="bold" text-anchor="middle" fill="#222">Menus</text>
+</g>
+</svg>
