@@ -253,3 +253,50 @@ All have base `none`. Each is a drink known by its own name, not an alcohol-free
 6. **Overlaps.** Aperitivo would hold four Campari and vermouth drinks, next to the Negroni and, if approved, the Boulevardier. The Navegado and the Mulled Wine are the same idea. Tell me where to thin.
 7. **Glasses the schema lacks.** Hurricane (Singapore Sling), goblet (Peruvian pisco sour) and a toddy or Irish coffee glass. I mapped them to `collins`, `coupe` and `mug`.
 8. **Part 1 decisions.** The Whiskey Sour's serve, the Mai Tai's ice, the Planter's Punch spec, the size and citrus of the Chilean pisco sour, and the Terremoto's glass size and fernet.
+
+## Maintainer decisions (2026-11-17)
+
+The maintainer accepted the recommendations below on 2026-11-17. The values in Part 2 were read from page summaries, so each measure is checked again on its source page when the recipe is written.
+
+### Approved lists
+
+| Family | Recipes | Alternates | Left out |
+| --- | --- | --- | --- |
+| Sours | White Lady, Clover Club, New York Sour | Bee's Knees, Aviation | |
+| Spirit-forward | Boulevardier, Martinez, Vieux Carré | Hanky Panky, Rusty Nail | |
+| Highballs & Collins | Dark 'n' Stormy, Gin Fizz, Tequila Sunrise | Horse's Neck, Gin and Tonic | |
+| Sparkling & spritz | Kir Royal, Old Cuban, Russian Spring Punch | Ponche a la romana | Hugo |
+| Tiki & tropical | Singapore Sling, Three Dots and a Dash, Queen's Park Swizzle | Painkiller, Missionary's Downfall | |
+| Latin American | Chilcano, Piscola, Fernandito | Borgoña | Canchánchara (declined by the maintainer on 2026-10-30) |
+| Coffee & after-dinner | Espresso Martini, Black Russian, Alexander, Grasshopper, Carajillo | | B-52; Cola de mono until a readable source exists |
+| Juleps & smashes | Mint Julep, Whiskey Smash, Gin Basil Smash, South Side, Prescription Julep | Brandy Smash, Sherry Cobbler | |
+| Aperitivo | Americano, Garibaldi, Adonis, Cardinale, Pichuncho | | Negroni Sbagliato, Milano-Torino |
+| Hot drinks | Irish Coffee, Hot Toddy, Hot Buttered Rum, Navegado, Negus | | Mulled Wine (same idea as the Navegado), Blue Blazer (it teaches throwing burning alcohol) |
+| Beer | Michelada, Boilermaker, Shandy, Black Velvet, Black and Tan | Snakebite | Fan-Schop until a source gives amounts |
+| Mocktails | Shirley Temple, Arnold Palmer, Virgin Mary, Saint Clements, Pussyfoot | Roy Rogers | Mote con huesillo (closer to a dessert, hard to cost by the glass) |
+
+The Boilermaker was asked for by the maintainer: it uses the `pint` glass, and the steps serve the shot beside it.
+
+### Answers to the open questions
+
+1. **Chilean source:** the La Tercera article is accepted for the Terremoto, Pichuncho, Borgoña and Ponche a la romana. The Pichuncho follows it (pisco and red vermouth, 3:1), not Difford's version.
+2. **Liqueur-only drinks:** step 14 adds the base `liqueur`.
+3. **Modern drinks:** the IBA-listed ones are in (Old Cuban, Russian Spring Punch, Espresso Martini, Gin Basil Smash). Drinks with a named creator that the IBA does not list are out (Hugo, Negroni Sbagliato, B-52).
+4. **Rich syrup:** the catalogue gains `rich-sugar-syrup` (2:1), so Difford's amounts are kept as written.
+5. **Amounts that are not ml:** the maintainer sets the per-glass amount for "a few drops" of egg white and for drinks adapted from a batch recipe, and those recipes say they are adapted.
+6. **Overlaps:** resolved by the lists above.
+7. **Glasses:** no new glasses; the mappings in Part 2 stand.
+8. **Part 1:** see below.
+
+### Changes to the existing recipes
+
+Made in the data pull requests of steps 15 and 17:
+
+- **french-75:** remove `topUp` from the Champagne; it goes to the glass with `into: 'glass'`.
+- **mai-tai:** keep `ice: crushed` and add the crushed ice to the steps.
+- **planters-punch:** take the spec from Difford's Guide, since the IBA spec is outdated (ADR 0007); cite both.
+- **pisco-sour-chilean:** 60 ml pisco, 20 ml syrup, 20 ml citrus (the 3:1:1 ratio) in a `coupe`, no egg white and no bitters. The larger serve in a tall glass or big goblet, the "catedral", is mentioned in the description.
+- **Both pisco sours:** use `key-lime-juice`, which the catalogue gains: the Chilean recipe is made with the Pica lemon, the Peruvian one with the key lime.
+- **vaina-chilena:** 1 egg yolk instead of half.
+- **terremoto:** unchanged (200 ml of pipeño, no fernet), as the maintainer approved on 2026-10-30; the grenadine moves after the pipeño in step 15.
+- Everything else in Part 1 stays as it is.
