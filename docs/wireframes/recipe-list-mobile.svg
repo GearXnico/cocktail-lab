@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="838" height="894" viewBox="0 0 838 894" font-family="Arial, Helvetica, sans-serif">
+<title>Recipe list, mobile</title>
+<rect width="838" height="894" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Recipe list · mobile (375 px)</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="375" height="812" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<text x="16" y="94" font-size="24" font-weight="bold" fill="#222">Recipes</text>
+<rect x="16" y="108" width="343" height="40" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="26" y="133" font-size="14" fill="#888">Search by name or ingredient</text>
+<circle cx="339" cy="126" r="6" fill="none" stroke="#888"/>
+<line x1="343" y1="130" x2="348" y2="135" stroke="#888" stroke-width="1"/>
+<rect x="16" y="158" width="112.24000000000001" height="34" rx="4" fill="#dddddd" stroke="#999" stroke-width="1"/>
+<text x="72.12" y="180.04" font-size="14" text-anchor="middle" fill="#222">Filters (1)</text>
+<circle cx="130" cy="160" r="11" fill="#222"/>
+<text x="130" y="164.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<rect x="200" y="158" width="159" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="210" y="180" font-size="14" fill="#222">Sort: Name A–Z</text>
+<text x="341" y="180" font-size="14" fill="#888">▾</text>
+<rect x="16" y="204" width="116.64000000000001" height="28" rx="14" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="74.32000000000001" y="222.68" font-size="13" text-anchor="middle" fill="#ffffff">Lime juice  ×</text>
+<text x="359" y="222" font-size="13" text-anchor="end" fill="#888">11 recipes</text>
+<rect x="16" y="244" width="343" height="84" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="24" y="252" width="68" height="68" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="24" y1="252" x2="92" y2="320" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="92" y1="252" x2="24" y2="320" stroke="#c8c8c8" stroke-width="1"/>
+<text x="104" y="271.2" font-size="15" font-weight="bold" fill="#222">Cuba Libre</text>
+<text x="104" y="292.2" font-size="12" fill="#888">Highballs &amp; Collins</text>
+<text x="104" y="313.2" font-size="13" fill="#444">Build · Highball</text>
+<text x="347" y="271.2" font-size="12" text-anchor="end" fill="#888">In your bar</text>
+<rect x="16" y="336" width="343" height="84" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="24" y="344" width="68" height="68" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="24" y1="344" x2="92" y2="412" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="92" y1="344" x2="24" y2="412" stroke="#c8c8c8" stroke-width="1"/>
+<text x="104" y="363.2" font-size="15" font-weight="bold" fill="#222">Daiquiri</text>
+<text x="104" y="384.2" font-size="12" fill="#888">Sours</text>
+<text x="104" y="405.2" font-size="13" fill="#444">Shake · Cocktail glass</text>
+<text x="347" y="363.2" font-size="12" text-anchor="end" fill="#888">In your bar</text>
+<rect x="16" y="428" width="343" height="84" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="24" y="436" width="68" height="68" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="24" y1="436" x2="92" y2="504" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="92" y1="436" x2="24" y2="504" stroke="#c8c8c8" stroke-width="1"/>
+<text x="104" y="455.2" font-size="15" font-weight="bold" fill="#222">Jungle Bird</text>
+<text x="104" y="476.2" font-size="12" fill="#888">Tiki &amp; tropical</text>
+<text x="104" y="497.2" font-size="13" fill="#444">Shake · Rocks glass</text>
+<rect x="16" y="520" width="343" height="84" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="24" y="528" width="68" height="68" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="24" y1="528" x2="92" y2="596" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="92" y1="528" x2="24" y2="596" stroke="#c8c8c8" stroke-width="1"/>
+<text x="104" y="547.2" font-size="15" font-weight="bold" fill="#222">Last Word</text>
+<text x="104" y="568.2" font-size="12" fill="#888">Sours</text>
+<text x="104" y="589.2" font-size="13" fill="#444">Shake · Cocktail glass</text>
+<rect x="16" y="612" width="343" height="84" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="24" y="620" width="68" height="68" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="24" y1="620" x2="92" y2="688" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="92" y1="620" x2="24" y2="688" stroke="#c8c8c8" stroke-width="1"/>
+<text x="104" y="639.2" font-size="15" font-weight="bold" fill="#222">Mai Tai</text>
+<text x="104" y="660.2" font-size="12" fill="#888">Tiki &amp; tropical</text>
+<text x="104" y="681.2" font-size="13" fill="#444">Shake · Rocks glass</text>
+<rect x="16" y="704" width="343" height="84" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="24" y="712" width="68" height="68" rx="2" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<line x1="24" y1="712" x2="92" y2="780" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="92" y1="712" x2="24" y2="780" stroke="#c8c8c8" stroke-width="1"/>
+<text x="104" y="731.2" font-size="15" font-weight="bold" fill="#222">Margarita</text>
+<text x="104" y="752.2" font-size="12" fill="#888">Sours</text>
+<text x="104" y="773.2" font-size="13" fill="#444">Shake · Cocktail glass</text>
+<text x="347" y="731.2" font-size="12" text-anchor="end" fill="#888">In your bar</text>
+<rect x="0" y="752" width="375" height="60" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="752" x2="375" y2="752" stroke="#cccccc" stroke-width="1"/>
+<rect x="36.875" y="762" width="20" height="20" rx="4" fill="#555" stroke="#999" stroke-width="1"/>
+<text x="46.875" y="800" font-size="12" font-weight="bold" text-anchor="middle" fill="#222">Recipes</text>
+<rect x="130.625" y="762" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="140.625" y="800" font-size="12" text-anchor="middle" fill="#222">My bar</text>
+<rect x="224.375" y="762" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="234.375" y="800" font-size="12" text-anchor="middle" fill="#222">Prices</text>
+<rect x="318.125" y="762" width="20" height="20" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="328.125" y="800" font-size="12" text-anchor="middle" fill="#222">Menus</text>
+</g>
+<text x="439" y="38" font-size="15" font-weight="bold" fill="#222">Filters sheet open</text>
+<g transform="translate(439 58)">
+<rect x="0" y="0" width="375" height="812" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<rect x="0" y="57" width="375" height="755" rx="0" fill="#000000" stroke="none" stroke-width="1" fill-opacity="0.25"/>
+<rect x="0" y="150" width="375" height="662" rx="14" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="167" y="160" width="40" height="5" rx="2" fill="#dddddd" stroke="none" stroke-width="1"/>
+<text x="16" y="196" font-size="18" font-weight="bold" fill="#222">Filters</text>
+<text x="359" y="196" font-size="13" text-anchor="end" text-decoration="underline" fill="#444">Clear all</text>
+<text x="16" y="228" font-size="14" font-weight="bold" fill="#222">Family</text>
+<rect x="16" y="238" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="43.8" y="255.32" font-size="12" text-anchor="middle" fill="#222">Sours</text>
+<rect x="79.6" y="238" width="116.08000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="137.64" y="255.32" font-size="12" text-anchor="middle" fill="#222">Spirit-forward</text>
+<rect x="203.68" y="238" width="149.68" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="278.52" y="255.32" font-size="12" text-anchor="middle" fill="#222">Highballs &amp; Collins</text>
+<rect x="16" y="272" width="142.96" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="87.48" y="289.32" font-size="12" text-anchor="middle" fill="#222">Sparkling &amp; spritz</text>
+<rect x="166.96" y="272" width="122.80000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="228.36" y="289.32" font-size="12" text-anchor="middle" fill="#222">Tiki &amp; tropical</text>
+<rect x="16" y="306" width="116.08000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="74.04" y="323.32" font-size="12" text-anchor="middle" fill="#222">Latin American</text>
+<text x="16" y="354" font-size="14" font-weight="bold" fill="#222">Ingredient</text>
+<rect x="16" y="364" width="343" height="34" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="26" y="386" font-size="14" fill="#888">Add an ingredient…</text>
+<text x="341" y="386" font-size="14" fill="#888">▾</text>
+<rect x="16" y="408" width="116.64000000000001" height="28" rx="14" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="74.32000000000001" y="426.68" font-size="13" text-anchor="middle" fill="#ffffff">Lime juice  ×</text>
+<text x="16" y="462" font-size="14" font-weight="bold" fill="#222">Base</text>
+<rect x="16" y="472" width="42.160000000000004" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="37.08" y="489.32" font-size="12" text-anchor="middle" fill="#222">Gin</text>
+<rect x="66.16" y="472" width="42.160000000000004" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="87.24" y="489.32" font-size="12" text-anchor="middle" fill="#222">Rum</text>
+<rect x="116.32" y="472" width="69.04" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="150.84" y="489.32" font-size="12" text-anchor="middle" fill="#222">Tequila</text>
+<rect x="193.36" y="472" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="221.16000000000003" y="489.32" font-size="12" text-anchor="middle" fill="#222">Pisco</text>
+<rect x="256.96000000000004" y="472" width="62.32000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="288.12000000000006" y="489.32" font-size="12" text-anchor="middle" fill="#222">Whisky</text>
+<rect x="16" y="506" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="43.8" y="523.32" font-size="12" text-anchor="middle" fill="#222">Vodka</text>
+<rect x="79.6" y="506" width="69.04" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="114.12" y="523.32" font-size="12" text-anchor="middle" fill="#222">Cachaça</text>
+<rect x="156.64" y="506" width="62.32000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="187.79999999999998" y="523.32" font-size="12" text-anchor="middle" fill="#222">Brandy</text>
+<rect x="226.95999999999998" y="506" width="116.08000000000001" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="285" y="523.32" font-size="12" text-anchor="middle" fill="#222">Sparkling wine</text>
+<rect x="16" y="540" width="48.88" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="40.44" y="557.32" font-size="12" text-anchor="middle" fill="#222">Wine</text>
+<rect x="72.88" y="540" width="75.76" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="110.75999999999999" y="557.32" font-size="12" text-anchor="middle" fill="#222">Aperitif</text>
+<text x="16" y="588" font-size="14" font-weight="bold" fill="#222">Technique</text>
+<rect x="16" y="598" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="43.8" y="615.32" font-size="12" text-anchor="middle" fill="#222">Shake</text>
+<rect x="79.6" y="598" width="48.88" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="104.03999999999999" y="615.32" font-size="12" text-anchor="middle" fill="#222">Stir</text>
+<rect x="136.48" y="598" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="164.28" y="615.32" font-size="12" text-anchor="middle" fill="#222">Build</text>
+<rect x="200.07999999999998" y="598" width="55.6" height="26" rx="13" fill="#eeeeee" stroke="#999" stroke-width="1"/>
+<text x="227.88" y="615.32" font-size="12" text-anchor="middle" fill="#222">Blend</text>
+<text x="16" y="646" font-size="14" font-weight="bold" fill="#222">Glass · Difficulty · Taste</text>
+<text x="16" y="668" font-size="12" fill="#888">(same chips as desktop, below the fold)</text>
+<rect x="0" y="744" width="375" height="68" rx="0" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="16" y="756" width="343" height="44" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="187.5" y="783.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Show 11 recipes</text>
+</g>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1328" height="1082" viewBox="0 0 1328 1082" font-family="Arial, Helvetica, sans-serif">
+<title>Print view, desktop</title>
+<rect width="1328" height="1082" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Print view · desktop · customer and internal pages (A4)</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="1280" height="1000" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="1280" height="64" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="64" x2="1280" y2="64" stroke="#cccccc" stroke-width="1"/>
+<text x="24" y="38" font-size="14" text-decoration="underline" fill="#222">‹ Back to menu</text>
+<rect x="200" y="17" width="233.28000000000003" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="200" y="17" width="116.64000000000001" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="258.32" y="36.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">Customer view</text>
+<line x1="316.64" y1="17" x2="316.64" y2="47" stroke="#999" stroke-width="1"/>
+<text x="374.96" y="36.68" font-size="13" text-anchor="middle" fill="#222">Internal view</text>
+<circle cx="470" cy="32" r="11" fill="#222"/>
+<text x="470" y="36.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<text x="520" y="38" font-size="13" font-weight="bold" fill="#222">1 drink has no price (Old Fashioned): it prints without one.</text>
+<circle cx="1006" cy="32" r="11" fill="#222"/>
+<text x="1006" y="36.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+<rect x="1146" y="15" width="110" height="34" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<text x="1201" y="37.04" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Print</text>
+<text x="1256" y="88" font-size="12" text-anchor="end" fill="#888">This bar is not printed (@media print)</text>
+<rect x="40" y="104" width="595" height="842" rx="0" fill="#ffffff" stroke="#777" stroke-width="1"/>
+<text x="337.5" y="184" font-size="30" font-weight="bold" text-anchor="middle" fill="#222">Summer terrace</text>
+<text x="88" y="230" font-size="17" font-weight="bold" fill="#222">Negroni</text>
+<text x="587" y="230" font-size="17" font-weight="bold" text-anchor="end" fill="#222">$8.200</text>
+<line x1="162.64" y1="226" x2="521.88" y2="226" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="88" y="252" font-size="13" font-style="italic" fill="#888">Garnish: Half orange slice</text>
+<text x="88" y="294" font-size="17" font-weight="bold" fill="#222">Pisco Sour (Chilean recipe)</text>
+<text x="587" y="294" font-size="17" font-weight="bold" text-anchor="end" fill="#222">$6.500</text>
+<line x1="353.04" y1="290" x2="521.88" y2="290" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="88" y="316" font-size="13" font-style="italic" fill="#888">No garnish</text>
+<text x="88" y="358" font-size="17" font-weight="bold" fill="#222">Mojito</text>
+<text x="587" y="358" font-size="17" font-weight="bold" text-anchor="end" fill="#222">$6.000</text>
+<line x1="153.12" y1="354" x2="521.88" y2="354" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="88" y="380" font-size="13" font-style="italic" fill="#888">Garnish: Mint sprigs and lime slice</text>
+<text x="88" y="422" font-size="17" font-weight="bold" fill="#222">Aperol Spritz</text>
+<text x="587" y="422" font-size="17" font-weight="bold" text-anchor="end" fill="#222">$9.800</text>
+<line x1="219.76" y1="418" x2="521.88" y2="418" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="88" y="444" font-size="13" font-style="italic" fill="#888">Garnish: Orange slice</text>
+<text x="88" y="486" font-size="17" font-weight="bold" fill="#222">Paloma</text>
+<text x="587" y="486" font-size="17" font-weight="bold" text-anchor="end" fill="#222">$7.500</text>
+<line x1="153.12" y1="482" x2="521.88" y2="482" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="88" y="508" font-size="13" font-style="italic" fill="#888">Garnish: Lime slice</text>
+<text x="88" y="550" font-size="17" font-weight="bold" fill="#222">Old Fashioned</text>
+<text x="587" y="550" font-size="17" font-weight="bold" text-anchor="end" fill="#222"></text>
+<line x1="219.76" y1="546" x2="587" y2="546" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="88" y="572" font-size="13" font-style="italic" fill="#888">Garnish: Orange slice or zest, and a cocktail cherry</text>
+<text x="337.5" y="906" font-size="12" text-anchor="middle" fill="#888">Prices include 19 % tax</text>
+<rect x="660" y="104" width="595" height="842" rx="0" fill="#ffffff" stroke="#777" stroke-width="1"/>
+<text x="700" y="174" font-size="24" font-weight="bold" fill="#222">Summer terrace · internal</text>
+<text x="700" y="198" font-size="11" fill="#888">CLP · target cost 25 % · waste 10 % · tax 19 % incl. · printed 2026-11-17</text>
+<text x="700" y="234" font-size="13" font-weight="bold" fill="#222">Drink</text>
+<text x="950" y="234" font-size="13" font-weight="bold" text-anchor="end" fill="#222">Cost</text>
+<text x="1030" y="234" font-size="13" font-weight="bold" text-anchor="end" fill="#222">Cost %</text>
+<text x="1120" y="234" font-size="13" font-weight="bold" text-anchor="end" fill="#222">Margin</text>
+<text x="1215" y="234" font-size="13" font-weight="bold" text-anchor="end" fill="#222">Price</text>
+<line x1="700" y1="244" x2="1215" y2="244" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="268" font-size="13" font-weight="bold" fill="#222">Negroni</text>
+<text x="950" y="268" font-size="13" text-anchor="end" fill="#222">$1.722</text>
+<text x="1030" y="268" font-size="13" text-anchor="end" fill="#222">25.0 %</text>
+<text x="1120" y="268" font-size="13" text-anchor="end" fill="#222">$5.169</text>
+<text x="1215" y="268" font-size="13" text-anchor="end" fill="#222">$8.200</text>
+<line x1="700" y1="280" x2="1215" y2="280" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="302" font-size="13" font-weight="bold" fill="#222">Pisco Sour (Chilean recipe)</text>
+<text x="950" y="302" font-size="13" text-anchor="end" fill="#222">$1.353</text>
+<text x="1030" y="302" font-size="13" text-anchor="end" fill="#222">24.8 %</text>
+<text x="1120" y="302" font-size="13" text-anchor="end" fill="#222">$4.110</text>
+<text x="1215" y="302" font-size="13" text-anchor="end" fill="#222">$6.500</text>
+<line x1="700" y1="314" x2="1215" y2="314" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="336" font-size="13" font-weight="bold" fill="#222">Mojito</text>
+<text x="950" y="336" font-size="13" text-anchor="end" fill="#222">$1.257</text>
+<text x="1030" y="336" font-size="13" text-anchor="end" fill="#222">24.9 %</text>
+<text x="1120" y="336" font-size="13" text-anchor="end" fill="#222">$3.785</text>
+<text x="1215" y="336" font-size="13" text-anchor="end" fill="#222">$6.000</text>
+<line x1="700" y1="348" x2="1215" y2="348" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="370" font-size="13" font-weight="bold" fill="#222">Aperol Spritz</text>
+<text x="950" y="370" font-size="13" text-anchor="end" fill="#222">$2.049</text>
+<text x="1030" y="370" font-size="13" text-anchor="end" fill="#222">24.9 %</text>
+<text x="1120" y="370" font-size="13" text-anchor="end" fill="#222">$6.186</text>
+<text x="1215" y="370" font-size="13" text-anchor="end" fill="#222">$9.800</text>
+<line x1="700" y1="382" x2="1215" y2="382" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="404" font-size="13" font-weight="bold" fill="#222">Paloma</text>
+<text x="950" y="404" font-size="13" text-anchor="end" fill="#222">$1.775</text>
+<text x="1030" y="404" font-size="13" text-anchor="end" fill="#222">28.2 %</text>
+<text x="1120" y="404" font-size="13" text-anchor="end" fill="#222">$4.528</text>
+<text x="1215" y="404" font-size="13" text-anchor="end" fill="#222">$7.500</text>
+<line x1="700" y1="416" x2="1215" y2="416" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="438" font-size="13" font-weight="bold" fill="#222">Old Fashioned</text>
+<text x="950" y="438" font-size="13" text-anchor="end" fill="#222">—</text>
+<text x="1030" y="438" font-size="13" text-anchor="end" fill="#222">—</text>
+<text x="1120" y="438" font-size="13" text-anchor="end" fill="#222">—</text>
+<text x="1215" y="438" font-size="13" text-anchor="end" fill="#222">—</text>
+<text x="700" y="456" font-size="11" font-style="italic" fill="#444">Incomplete: no price for Sugar cube, Angostura bitters</text>
+<line x1="700" y1="468" x2="1215" y2="468" stroke="#cccccc" stroke-width="1"/>
+<text x="700" y="496" font-size="13" font-weight="bold" fill="#222">Average cost % 25.5 % (5 of 6 drinks)</text>
+<circle cx="660" cy="104" r="11" fill="#222"/>
+<text x="660" y="108.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+<text x="40" y="970" font-size="13" fill="#888">Customer page</text>
+<text x="660" y="970" font-size="13" fill="#888">Internal page (shown when "Internal view" is selected)</text>
+</g>
+</svg>

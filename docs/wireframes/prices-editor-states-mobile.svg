@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="838" height="962" viewBox="0 0 838 962" font-family="Arial, Helvetica, sans-serif">
+<title>Prices editor states, mobile</title>
+<rect width="838" height="962" fill="#ffffff"/>
+<text x="24" y="38" font-size="15" font-weight="bold" fill="#222">Price row states · incomplete cost</text>
+<g transform="translate(24 58)">
+<rect x="0" y="0" width="375" height="880" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<g transform="translate(0 72)">
+<rect x="16" y="0" width="343" height="236" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="32" y="28" font-size="16" font-weight="bold" fill="#222">Not priced vs priced at 0</text>
+<text x="32" y="68" font-size="14" font-weight="bold" fill="#222">Egg white</text>
+<rect x="136" y="50" width="90" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="146" y="70" font-size="14" fill="#888">Price</text>
+<rect x="236" y="50" width="70" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="246" y="70" font-size="14" fill="#888">Size</text>
+<text x="312" y="70" font-size="13" fill="#444">unit</text>
+<text x="32" y="102" font-size="13" font-weight="bold" fill="#222">Not priced</text>
+<text x="32" y="122" font-size="12" fill="#888">Not in your bar; drinks using it show an incomplete cost.</text>
+<text x="32" y="160" font-size="14" font-weight="bold" fill="#222">Water</text>
+<rect x="136" y="142" width="90" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="146" y="162" font-size="14" fill="#222">0</text>
+<rect x="236" y="142" width="70" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="246" y="162" font-size="14" fill="#222">1000</text>
+<text x="312" y="162" font-size="13" fill="#444">ml</text>
+<text x="32" y="194" font-size="13" font-weight="bold" fill="#222">Free (priced at 0)</text>
+<text x="32" y="214" font-size="12" fill="#888">Counts as priced: in your bar, line cost $0.</text>
+</g>
+<g transform="translate(0 326)">
+<rect x="16" y="0" width="343" height="378" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="32" y="28" font-size="16" font-weight="bold" fill="#222">Cost with your prices</text>
+<text x="343" y="28" font-size="13" text-anchor="end" text-decoration="underline" fill="#222">Edit prices</text>
+<rect x="28" y="46" width="319" height="84" rx="4" fill="#dddddd" stroke="#222" stroke-width="1.5"/>
+<text x="40" y="68" font-size="14" font-weight="bold" fill="#222">Cost incomplete: 2 without a price</text>
+<text x="40" y="90" font-size="13" fill="#444">Sugar cube, Angostura bitters</text>
+<text x="40" y="114" font-size="13" font-weight="bold" text-decoration="underline" fill="#222">Add prices ›</text>
+<text x="32" y="164" font-size="13" fill="#444">45 ml  Bourbon</text>
+<text x="343" y="164" font-size="13" text-anchor="end" fill="#444">$1.079</text>
+<text x="32" y="188" font-size="13" fill="#444">1 ×  Sugar cube</text>
+<text x="343" y="188" font-size="13" font-weight="bold" text-anchor="end" fill="#222">— no price</text>
+<text x="32" y="212" font-size="13" fill="#444">3 dashes  Angostura bitters</text>
+<text x="343" y="212" font-size="13" font-weight="bold" text-anchor="end" fill="#222">— no price</text>
+<text x="32" y="236" font-size="13" fill="#444">3 dashes  Water</text>
+<text x="343" y="236" font-size="13" text-anchor="end" fill="#444">$0</text>
+<line x1="32" y1="250" x2="343" y2="250" stroke="#cccccc" stroke-width="1"/>
+<text x="32" y="274" font-size="14" fill="#444">Waste 10 % · Extras per drink</text>
+<text x="343" y="274" font-size="14" text-anchor="end" fill="#222">$150</text>
+<text x="32" y="298" font-size="14" font-weight="bold" fill="#444">Drink cost</text>
+<text x="343" y="298" font-size="14" font-weight="bold" text-anchor="end" fill="#222">—</text>
+<text x="32" y="322" font-size="14" font-weight="bold" fill="#444">Suggested price</text>
+<text x="343" y="322" font-size="14" font-weight="bold" text-anchor="end" fill="#222">—</text>
+<text x="32" y="346" font-size="14" fill="#444">Cost % · Margin</text>
+<text x="343" y="346" font-size="14" text-anchor="end" fill="#222">— · —</text>
+<text x="32" y="370" font-size="11" fill="#888">Target cost 25 % · tax 19 % included · rounded up to 100</text>
+</g>
+</g>
+<text x="439" y="38" font-size="15" font-weight="bold" fill="#222">Cost 0</text>
+<g transform="translate(439 58)">
+<rect x="0" y="0" width="375" height="880" rx="0" fill="#ffffff" stroke="#777" stroke-width="1.5"/>
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#eeeeee" stroke="none" stroke-width="1"/>
+<line x1="0" y1="56" x2="375" y2="56" stroke="#cccccc" stroke-width="1"/>
+<text x="16" y="35" font-size="18" font-weight="bold" fill="#222">cocktail-lab</text>
+<rect x="283" y="13" width="73.12" height="30" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="301.28" y="32.68" font-size="13" text-anchor="middle" fill="#222">ES</text>
+<rect x="319.56" y="13" width="36.56" height="30" rx="4" fill="#555" stroke="#555" stroke-width="1"/>
+<line x1="319.56" y1="13" x2="319.56" y2="43" stroke="#999" stroke-width="1"/>
+<text x="337.84000000000003" y="32.68" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">EN</text>
+<g transform="translate(0 72)">
+<rect x="16" y="0" width="343" height="330" rx="4" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="32" y="28" font-size="16" font-weight="bold" fill="#222">Cost with your prices</text>
+<text x="343" y="28" font-size="13" text-anchor="end" text-decoration="underline" fill="#222">Edit prices</text>
+<rect x="28" y="46" width="319" height="84" rx="4" fill="#dddddd" stroke="#222" stroke-width="1.5"/>
+<text x="40" y="68" font-size="14" font-weight="bold" fill="#222">Drink cost is $0</text>
+<text x="40" y="90" font-size="13" fill="#444">No price can be suggested.</text>
+<text x="40" y="112" font-size="13" fill="#444">Check the prices of Orange juice and Prosecco.</text>
+<text x="32" y="164" font-size="13" fill="#444">75 ml  Orange juice</text>
+<text x="343" y="164" font-size="13" text-anchor="end" fill="#444">$0</text>
+<text x="32" y="188" font-size="13" fill="#444">75 ml  Prosecco</text>
+<text x="343" y="188" font-size="13" text-anchor="end" fill="#444">$0</text>
+<line x1="32" y1="202" x2="343" y2="202" stroke="#cccccc" stroke-width="1"/>
+<text x="32" y="226" font-size="14" fill="#444">Waste 10 % · Extras per drink</text>
+<text x="343" y="226" font-size="14" text-anchor="end" fill="#222">not set</text>
+<text x="32" y="250" font-size="14" font-weight="bold" fill="#444">Drink cost</text>
+<text x="343" y="250" font-size="14" font-weight="bold" text-anchor="end" fill="#222">$0</text>
+<text x="32" y="274" font-size="14" font-weight="bold" fill="#444">Suggested price</text>
+<text x="343" y="274" font-size="14" font-weight="bold" text-anchor="end" fill="#222">—</text>
+<text x="32" y="298" font-size="14" fill="#444">Cost % · Margin</text>
+<text x="343" y="298" font-size="14" text-anchor="end" fill="#222">— · —</text>
+<text x="32" y="322" font-size="11" fill="#888">Target cost 25 % · tax 19 % included · rounded up to 100</text>
+</g>
+</g>
+</svg>
