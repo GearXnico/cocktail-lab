@@ -40,10 +40,10 @@ const CostingBodySchema = z
     currency: z.string().refine((code) => currencies.has(code), 'Not an ISO 4217 currency code'),
   })
   .refine((body) => (body.recipeId === undefined) !== (body.ingredients === undefined), {
-    message: 'Send either recipeId or ingredients, not both and not neither',
+    error: 'Send either recipeId or ingredients, not both and not neither',
   })
   .refine((body) => new Set(body.prices.map((price) => price.ingredientId)).size === body.prices.length, {
-    message: 'Each ingredient can have only one price',
+    error: 'Each ingredient can have only one price',
     path: ['prices'],
   });
 

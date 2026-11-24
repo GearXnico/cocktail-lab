@@ -43,7 +43,7 @@ interface Costing {
   costPct: number | null;
   missing: string[];
   error: string;
-  issues: { path: string; code: string }[];
+  issues: { path: string; code: string; message: string }[];
 }
 
 let app: FastifyInstance;
@@ -178,6 +178,14 @@ describe('POST /api/v1/costing', () => {
     expect(status).toBe(400);
     expect(body.error).toBe('Bad Request');
     expect(body.issues.length).toBeGreaterThan(0);
+  });
+
+  it.each([
+    ['both recipeId and ingredients', { ...withRecipe, ingredients: [line] }, 'Send either recipeId or ingredients, not both and not neither'],
+    ['a duplicated price', { ...withRecipe, prices: [prices[0], prices[0]] }, 'Each ingredient can have only one price'],
+  ])('explains why it rejects %s', async (_name, payload, message) => {
+    const { body } = await post(payload);
+    expect(body.issues.map((issue) => issue.message)).toContain(message);
   });
 
   it('accepts the limits themselves', async () => {
